@@ -1,0 +1,22 @@
+:root {
+    --color-light: #2d3340;
+    --color-dark: #2d3340;
+}
+
+body {
+    background-color: #ebf1ff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Rubik' !important;
+    font-weight: 400 !important;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}

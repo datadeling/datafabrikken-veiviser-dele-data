@@ -1,0 +1,12 @@
+.DS_Store
+.vscode
+.vs
+.idea
+.envrc
+
+dist
+coverage
+node_modules
+
+# production
+/build
