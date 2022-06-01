@@ -5,6 +5,10 @@ const Root = styled.div`
     background-color: #ebf1ff;
     background-image: none !important;
   }
+
+  & > div:first-child > div > div {
+    min-height: auto !important;
+  }
 `;
 
 export default {
