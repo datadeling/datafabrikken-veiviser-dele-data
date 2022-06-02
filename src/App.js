@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import { Wizard, StyleProvider } from 'losen';
 
-import { Wizard } from 'losen';
 import store from './store';
-import datadeling from './api/datadeling.json';
 import styles from './styles';
-
+import datadeling from './api/datadeling.json';
 import dataExport from './exports/data-export';
 import { InfoBox } from './components/infobox';
 import { Container } from './components/container';
 import { Root } from './components/root';
+
+import Intro from './pages/Intro';
 
 export default class App extends Component {
   constructor(props) {
@@ -24,9 +25,29 @@ export default class App extends Component {
     this.setState({
       intro: false,
     });
+    // eslint-disable-next-line no-undef
+    window.scrollTo(0, 0);
+  }
+
+  showIntro() {
+    this.setState({ intro: true });
+    // eslint-disable-next-line no-undef
+    window.scrollTo(0, 0);
   }
 
   render() {
+    if (this.state.intro) {
+      return (
+        <Provider store={store}>
+          <Root>
+            <StyleProvider styles={styles}>
+              <Intro close={this.closeIntro} />
+            </StyleProvider>
+          </Root>
+        </Provider>
+      );
+    }
+
     return (
       <Provider store={store}>
         <Root>
