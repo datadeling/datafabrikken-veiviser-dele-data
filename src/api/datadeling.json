@@ -300,35 +300,34 @@
       "id": "confidentiality",
       "type": "Page",
       "heading": "Taushetsplikt",
-      "lead": "Informasjon underlagt taushetsplikt etter forvaltningsloven eller sektorlovgivning",
+      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder denne taushetsbelagt informasjon vil du i utgangspunktet være avskåret fra å dele dataene.<br><br>Taushetsplikt kan følge av lov, instruks eller avtale. Hvilke opplysninger som er omfattet av taushetsplikt, vil bero på den nærmere bestemmelse eller avtale som fastsetter taushetsplikt.",
       "children": [
         {
           "id": "confidentiality.question",
           "property": "confidentiality.question",
           "type": "Radio",
-          "heading": "XXX",
-          "text": "XXX",
+          "heading": "Er dataene du ønsker å dele underlagt taushetsplikt?",
           "options": [
             {
-              "id": "confidentiality.duty",
+              "id": "confidentiality.personal",
               "type": "Answer",
-              "heading": "Data som er underlagt taushetsplikt i sektorlovgivning?",
-              "text": "Helsepersonelloven, verdipapirloven, vergemålsloven mv.",
-              "value": "duty"
+              "heading": "Taushetsplikt om noens personlige forhold",
+              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om noens personlige forhold er taushetsbelagt.",
+              "value": "personal"
             },
             {
               "id": "confidentiality.technical",
               "type": "Answer",
-              "heading": "Data som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det være av betydning å hemmeligholde av hensyn til den som opplysningen angår?",
-              "text": " ",
+              "heading": "Taushetsplikt om forretningsmessige forhold",
+              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår.",
               "value": "technical"
             },
             {
-              "id": "confidentiality.personal",
+              "id": "confidentiality.duty",
               "type": "Answer",
-              "heading": "Data som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om noens personlige forhold?",
-              "text": " ",
-              "value": "personal"
+              "heading": "Taushetsplikt etter sektorlovgivning",
+              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for en yrkesgruppe som er underlagt taushetsplikt i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.",
+              "value": "duty"
             },
             {
               "id": "confidentiality.none",
@@ -745,7 +744,7 @@
         "complete": "Hurra - du kan dele dataene dine!",
         "completeWithError": "Beklager - du kan ikke dele data",
         "incomplete": "Beklager - du har ikke svart på alt",
-        "incompleteWithError": "Beklager - du kan ikke dele data og har ikke svart på alt"
+        "incompleteWithError": "Beklager - du har ikke svart på alt"
       },
       "lead": {
         "complete": "Les nøye gjennom svarene dine, og sjekk at alt stemmer før du deler dataene dine",
