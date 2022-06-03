@@ -313,7 +313,7 @@
               "id": "confidentiality.duty",
               "type": "Answer",
               "heading": "Data som er underlagt taushetsplikt i sektorlovgivning?",
-              "text":"Helsepersonelloven, verdipapirloven, vergemålsloven mv.",
+              "text": "Helsepersonelloven, verdipapirloven, vergemålsloven mv.",
               "value": "duty"
             },
             {
@@ -344,9 +344,24 @@
           "branches": [
             {
               "test": {
-                "field": "confidentiality.question",
-                "operator": "eq",
-                "value": "none"
+                "type": "or",
+                "clauses": [
+                  {
+                    "field": "confidentiality.question",
+                    "operator": "eq",
+                    "value": "duty"
+                  },
+                  {
+                    "field": "confidentiality.question",
+                    "operator": "eq",
+                    "value": "technical"
+                  },
+                  {
+                    "field": "confidentiality.question",
+                    "operator": "eq",
+                    "value": "personal"
+                  }
+                ]
               },
               "children": [
                 {
@@ -427,19 +442,19 @@
       "heading": "Immaterielle begrensninger",
       "children": [
         {
-          "id": "intangible.data",
-          "property": "intangible.data",
+          "id": "intangible.license",
+          "property": "intangible.license",
           "type": "Radio",
-          "heading": "Foreligger det andre imateriellerettslige begrensninger som er til hinder for at dataene kan deles?",
+          "heading": "Foreligger det en lisens som begrenser adgangen til å dele dataene uten samtykke fra rettighetshaver?",
           "options": [
             {
-              "id": "intangible.data.yes",
+              "id": "intangible.license.yes",
               "type": "Answer",
               "heading": "Ja",
               "value": "yes"
             },
             {
-              "id": "intangible.data.no",
+              "id": "intangible.license.no",
               "type": "Answer",
               "heading": "Nei",
               "value": "no"
@@ -451,20 +466,68 @@
           "branches": [
             {
               "test": {
-                "field": "intangible.data",
+                "field": "intangible.license",
                 "operator": "eq",
                 "value": "yes"
               },
               "children": [
                 {
-                  "id": "intangible.data.error",
+                  "id": "intangible.license.error",
                   "type": "Error",
                   "children": [
                     {
-                      "id": "intangible.data.error.msg",
+                      "id": "intangible.license.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom det foreligger en [sett inn] som begrenser eller forbyr informasjonen i dataene å deles.  Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "intangible.terms",
+          "property": "intangible.terms",
+          "type": "Radio",
+          "heading": "Foreligger det en terms of use avtale som begrenser adgangen til å dele datene?",
+          "summary": "Informasjon",
+          "details": "Enkelte datatilbydere har en \"terms of use\" avtale som supplerer eller utfyller en lisens. Bakgrunnen for dette er at datatilbyderen ikke har adgang til å endre innholdet i lisensen som velges, men kan tilpasse terms of use avtalen basert på hvilke interesser de ønsker ivaretatt.",
+          "options": [
+            {
+              "id": "intangible.terms.yes",
+              "type": "Answer",
+              "heading": "Ja",
+              "value": "yes"
+            },
+            {
+              "id": "intangible.terms.no",
+              "type": "Answer",
+              "heading": "Nei",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "field": "intangible.terms",
+                "operator": "eq",
+                "value": "yes"
+              },
+              "children": [
+                {
+                  "id": "intangible.terms.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "intangible.terms.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
                     }
                   ]
                 }
@@ -521,21 +584,19 @@
           ]
         },
         {
-          "id": "intangible.rights",
-          "property": "intangible.rights",
+          "id": "intangible.data",
+          "property": "intangible.data",
           "type": "Radio",
-          "heading": "Nyter dataene et databasevern som gjør at dataene ikke kan deles?",
-          "summary": "Informasjon",
-          "details": "Den som fremstiller en database, som for eksempel et formular, en katalog, en tabell, et program eller lignende arbeid, hvor innsamling, kontroll eller presentasjon av innholdet innebærer en vesentlig investering, har enerett til å råde over eller hele vesentlige deler av databasens innhold ved uttrykk fra eller gjenbruk av databasen.<br><br>Eneretten etter første ledd gjelder tilsvarende ved gjentatt og systematisk uttrykk eller gjenbruk av uvesentlige deler av databasen, dersom dette utgjør handlinger som skader den normale bruken av databasen eller urimelig tilsidesetter fremstillerens legitime interesser.<br><br>Eneretten til en database som nevnt i første ledd varer i 15 år etter utløpet av det året databasen ble fremstilt. Dersom databasen i løpet av dette tidsrommet offentliggjøres, varer vernet i 15 år etter utløpet av det året databasen første gang ble offentliggjort.<br><br>Er databasen som nevnt foran, helt eller for en del gjenstand for opphavsrett, kan også denne gjøres gjeldende.",
+          "heading": "Utgjør dataene du har lyst til å dele en vesentlig eller uvesentlig del av en database som tilhører noen andre?",
           "options": [
             {
-              "id": "intangible.rights.yes",
+              "id": "intangible.data.yes",
               "type": "Answer",
               "heading": "Ja",
               "value": "yes"
             },
             {
-              "id": "intangible.rights.no",
+              "id": "intangible.data.no",
               "type": "Answer",
               "heading": "Nei",
               "value": "no"
@@ -547,114 +608,20 @@
           "branches": [
             {
               "test": {
-                "field": "intangible.rights",
+                "field": "intangible.data",
                 "operator": "eq",
                 "value": "yes"
               },
               "children": [
                 {
-                  "id": "intangible.rights.error",
+                  "id": "intangible.data.error",
                   "type": "Error",
                   "children": [
                     {
-                      "id": "intangible.rights.error.msg",
+                      "id": "intangible.data.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "intangible.terms",
-          "property": "intangible.terms",
-          "type": "Radio",
-          "heading": "Foreligger det en terms of use-avtale som er til hinder for at dataene kan deles?",
-          "summary": "Informasjon",
-          "details": "Enkelte datatilbydere har en \"terms of use\" avtale som supplerer eller utfyller en lisens. Bakgrunnen for dette er at datatilbyderen ikke har adgang til å endre innholdet i lisensen som velges, men kan tilpasse terms of use avtalen basert på hvilke interesser de ønsker ivaretatt.",
-          "options": [
-            {
-              "id": "intangible.terms.yes",
-              "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
-            },
-            {
-              "id": "intangible.terms.no",
-              "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
-            }
-          ]
-        },
-        {
-          "type": "Branch",
-          "branches": [
-            {
-              "test": {
-                "field": "intangible.terms",
-                "operator": "eq",
-                "value": "yes"
-              },
-              "children": [
-                {
-                  "id": "intangible.terms.error",
-                  "type": "Error",
-                  "children": [
-                    {
-                      "id": "intangible.terms.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "intangible.license",
-          "property": "intangible.license",
-          "type": "Radio",
-          "heading": "Foreligger det en lisens som forbyr dataene fra å deles?",
-          "options": [
-            {
-              "id": "intangible.license.yes",
-              "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
-            },
-            {
-              "id": "intangible.license.no",
-              "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
-            }
-          ]
-        },
-        {
-          "type": "Branch",
-          "branches": [
-            {
-              "test": {
-                "field": "intangible.license",
-                "operator": "eq",
-                "value": "yes"
-              },
-              "children": [
-                {
-                  "id": "intangible.license.error",
-                  "type": "Error",
-                  "children": [
-                    {
-                      "id": "intangible.license.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene kan ikke deles, dersom det foreligger en [sett inn] som begrenser eller forbyr informasjonen i dataene å deles.  Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
                     }
                   ]
                 }
@@ -778,7 +745,7 @@
         "complete": "Hurra - du kan dele dataene dine!",
         "completeWithError": "Beklager - du kan ikke dele data",
         "incomplete": "Beklager - du har ikke svart på alt",
-        "incompleteWithError": "Beklager - du har ikke svart på alt"
+        "incompleteWithError": "Beklager - du kan ikke dele data og har ikke svart på alt"
       },
       "lead": {
         "complete": "Les nøye gjennom svarene dine, og sjekk at alt stemmer før du deler dataene dine",
