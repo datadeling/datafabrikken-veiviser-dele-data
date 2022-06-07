@@ -813,19 +813,21 @@
       "heading": "Konkurranserettslige begrensninger",
       "children": [
         {
-          "id": "illegal.competition",
-          "property": "illegal.competition",
+          "id": "illegal.belong",
+          "property": "illegal.belong",
           "type": "Radio",
-          "heading": "Vil delingen av data innebære et samarbeid mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte?",
+          "heading": "Tilhører du et offentlig eller privat foretak?",
+          "summary": "Informasjon",
+          "details": "Spørsmålet må tolkes i lys av konkurranseregelverket og de definisjonene som følger av konkurranseloven og tilhørende regelverk. Begrepet foretak er definert i konkurranseloven § 2 og omfatter enhver enhet som utøver privat eller offentlig ervervsvirksomhet, uavhengig av i hvilken form virksomheten utøves. Det er virksomhetens art som er avgjørende, ikke enhetens rettslige status eller finansiering.",
           "options": [
             {
-              "id": "illegal.competition.yes",
+              "id": "illegal.belong.yes",
               "type": "Answer",
               "heading": "Ja",
               "value": "yes"
             },
             {
-              "id": "illegal.competition.no",
+              "id": "illegal.belong.no",
               "type": "Answer",
               "heading": "Nei",
               "value": "no"
@@ -837,20 +839,92 @@
           "branches": [
             {
               "test": {
-                "field": "illegal.competition",
+                "field": "illegal.belong",
                 "operator": "eq",
                 "value": "yes"
               },
               "children": [
                 {
-                  "id": "illegal.competition.error",
-                  "type": "Error",
-                  "children": [
+                  "id": "illegal.economy",
+                  "property": "illegal.economy",
+                  "type": "Radio",
+                  "heading": "Ønskes dataene delt med et annet offentlig eller privat foretak som ikke tilhører samme økonomiske enhet?",
+                  "summary": "Informasjon",
+                  "details": "Samarbeid som skjer innenfor samme økonomiske enhet rammes ikke av konkurranseloven § 10.<br><br>Forbudet rammer kun samarbeid mellom to uavhengige foretak. For eksempel rammer forbudet ikke samarbeid mellom selskaper innenfor samme konsern, eller mellom agent og prinsipal.",
+                  "options": [
                     {
-                      "id": "illegal.competition.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "???"
+                      "id": "illegal.economy.yes",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": "yes"
+                    },
+                    {
+                      "id": "illegal.economy.no",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "type": "Branch",
+                  "branches": [
+                    {
+                      "test": {
+                        "field": "illegal.economy",
+                        "operator": "eq",
+                        "value": "yes"
+                      },
+                      "children": [
+                        {
+                          "id": "illegal.competition",
+                          "property": "illegal.competition",
+                          "type": "Radio",
+                          "heading": "Vil delingen av data innebære et samarbeid mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte?",
+                          "summary": "Informasjon",
+                          "details": "Konkurranseloven § 10 første ledd forbyr samarbeid mellom foretak som har til formål eller virkning å begrense konkurransen. Tilsvarende forbud finnes i EØS-avtalen artikkel 53 og TEUV artikkel 101.<br><br>Forbudet mot konkurransebegrensende samarbeid gjelder ikke bare avtaler, men også mer uformelt samarbeid som for eksempel at to konkurrenter deler data som inneholder informasjon, med sikte på å øke prisene på sine varer.",
+                          "options": [
+                            {
+                              "id": "illegal.competition.yes",
+                              "type": "Answer",
+                              "heading": "Ja",
+                              "value": "yes"
+                            },
+                            {
+                              "id": "illegal.competition.no",
+                              "type": "Answer",
+                              "heading": "Nei",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Branch",
+                          "branches": [
+                            {
+                              "test": {
+                                "field": "illegal.competition",
+                                "operator": "eq",
+                                "value": "yes"
+                              },
+                              "children": [
+                                {
+                                  "id": "illegal.competition.error",
+                                  "type": "Error",
+                                  "children": [
+                                    {
+                                      "id": "illegal.competition.error.msg",
+                                      "type": "Text",
+                                      "warning": true,
+                                      "text": "Dersom det deles data mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte er det en risiko for at det foreligger et ulovlig samarbeid etter konkurranselovens § 10.<br><br>Vi anbefaler deg å ikke dele data med konsumenten med mindre dette kan gjøres uten formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
