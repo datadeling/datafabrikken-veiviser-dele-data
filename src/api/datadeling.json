@@ -8,7 +8,6 @@
       "id": "personalinformation",
       "type": "Page",
       "heading": "Personopplysninger",
-      "lead": "xxx",
       "children": [
         {
           "id": "personal.data",
@@ -769,6 +768,32 @@
                               "type": "Answer",
                               "heading": "Nei",
                               "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Branch",
+                          "branches": [
+                            {
+                              "test": {
+                                "field": "state.aid.market",
+                                "operator": "eq",
+                                "value": "yes"
+                              },
+                              "children": [
+                                {
+                                  "id": "state.aid.market.error",
+                                  "type": "Error",
+                                  "children": [
+                                    {
+                                      "id": "state.aid.market.error.msg",
+                                      "type": "Text",
+                                      "warning": true,
+                                      "text": "Dersom det overføres data fra det offentlige til det private, slik at en eller flere private aktører får tilgang til data på bedre vilkår enn resten av markedet, kan denne overføringen utgjøre en forskjellsbehandling som innebærer ulovlig statsstøtte etter EØS-avtalens artikkel 61. Vi anbefaler deg å ta kontakt med en advokat dersom du er usikker på om det er anledning til å dele data etter statsstøtteregelverket."
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
                         }
