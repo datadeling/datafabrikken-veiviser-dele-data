@@ -136,9 +136,13 @@
           "branches": [
             {
               "test": {
-                "field": "personal.data",
-                "operator": "eq",
-                "value": "ja"
+                "type": "or",
+                "clauses": [
+                  {
+                    "field": "sharing.basis",
+                    "operator": "required"
+                  }
+                ]
               },
               "children": [
                 {
@@ -684,9 +688,104 @@
       ]
     },
     {
+      "id": "state.aid",
+      "type": "Page",
+      "heading": "Statsstøtterettslige begrensninger",
+      "children": [
+        {
+          "id": "state.aid.public",
+          "property": "state.aid.public",
+          "type": "Radio",
+          "heading": "Er du en offentlig aktør?",
+          "options": [
+            {
+              "id": "state.aid.public.yes",
+              "type": "Answer",
+              "heading": "Ja",
+              "value": "yes"
+            },
+            {
+              "id": "state.aid.public.no",
+              "type": "Answer",
+              "heading": "Nei",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "field": "state.aid.public",
+                "operator": "eq",
+                "value": "yes"
+              },
+              "children": [
+                {
+                  "id": "state.aid.private",
+                  "property": "state.aid.private",
+                  "type": "Radio",
+                  "heading": "Ønsker du å dele dataene med en privat aktør?",
+                  "options": [
+                    {
+                      "id": "state.aid.private.yes",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": "yes"
+                    },
+                    {
+                      "id": "state.aid.private.no",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "type": "Branch",
+                  "branches": [
+                    {
+                      "test": {
+                        "field": "state.aid.private",
+                        "operator": "eq",
+                        "value": "yes"
+                      },
+                      "children": [
+                        {
+                          "id": "state.aid.market",
+                          "property": "state.aid.market",
+                          "type": "Radio",
+                          "heading": "Vil delingen av data medføre at en privat aktør får tilgang på data på bedre vilkår enn resten av markedet for øvrig?",
+                          "options": [
+                            {
+                              "id": "state.aid.market.yes",
+                              "type": "Answer",
+                              "heading": "Ja",
+                              "value": "yes"
+                            },
+                            {
+                              "id": "state.aid.market.no",
+                              "type": "Answer",
+                              "heading": "Nei",
+                              "value": "no"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "illegal",
       "type": "Page",
-      "heading": "Foreligger det ulovlig statsstøtte?",
+      "heading": "Konkurranserettslige begrensninger",
       "children": [
         {
           "id": "illegal.competition",
