@@ -8,7 +8,7 @@ const InfoBox = styled.div`
   flex: 0 1 49%;
   line-height: 1.15;
   padding: 2em;
-  margin-top: 4em;
+  margin-top: 5em;
 
   & > a {
     color: #566c99;
