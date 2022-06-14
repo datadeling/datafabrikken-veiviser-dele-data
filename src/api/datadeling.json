@@ -447,19 +447,39 @@
           "id": "intangible.license",
           "property": "intangible.license",
           "type": "Radio",
-          "heading": "Foreligger det en lisens som begrenser adgangen til å dele dataene uten samtykke fra rettighetshaver?",
+          "heading": "Er dataene merket med en lisens?",
+          "summary": "Informasjon",
+          "details": "En lisens fungerer som en standardisert avtale mellom en lisensgiver (den som «eier» rettigheten) og en eller flere lisenstakere (de som ønsker å utnytte den aktuelle rettigheten). Et datasett kan være merket med en lisens som beskriver rammene for hvordan datasettet kan og skal brukes. Lisensen kan for eksempel gi deg rett til å kopiere, bruke og tilgjengeliggjøre informasjon gitt at du navngir bidragsyterne og oppfyller de vilkår som er beskrevet lisensen. Bruk av datasett merket med en aktuell lisens vil som regel innebære en aksept av vilkårene i lisensen, inkludert eventuelle ansvarsfraskrivelser. Det er derfor viktig at du leser lisensen slik at en er innforstått med hvilke forpliktelser som følger en eventuell bruk av dataene.",
           "options": [
             {
-              "id": "intangible.license.yes",
+              "id": "intangible.license.cco",
               "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
+              "heading": "CCO lisens",
+              "value": "cco"
             },
             {
-              "id": "intangible.license.no",
+              "id": "intangible.license.cc",
               "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
+              "heading": "CC BY 4.0",
+              "value": "cc"
+            },
+            {
+              "id": "intangible.license.nlod",
+              "type": "Answer",
+              "heading": "Norsk lisens for offentlig data (NLOD)",
+              "value": "nlod"
+            },
+            {
+              "id": "intangible.license.other",
+              "type": "Answer",
+              "heading": "En annen lisens",
+              "value": "other"
+            },
+            {
+              "id": "intangible.license.none",
+              "type": "Answer",
+              "heading": "Ingen lisens",
+              "value": "none"
             }
           ]
         },
@@ -470,18 +490,60 @@
               "test": {
                 "field": "intangible.license",
                 "operator": "eq",
-                "value": "yes"
+                "value": "nlod"
               },
               "children": [
                 {
-                  "id": "intangible.license.error",
+                  "id": "intangible.license.nlod.error",
                   "type": "Error",
                   "children": [
                     {
-                      "id": "intangible.license.error.msg",
+                      "id": "intangible.license.nlod.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Samlinger av data kan utgjøre en database. Dersom vilkårene i åndsverkloven § 24 er oppfylt, kan den som har fremstilt databasen, få en enerett til å råde over hele eller vesentlige deler av databasens innhold.<br><br>Lovens vilkår er at innsamling, kontroll eller presentasjon av innholdet i databasen innebærer en “vesentlig investering”. Eneretten innebærer en rett til å forby andre å kopiere eller å gjøre databasen tilgjengelig for allmennheten så fremt det gjelder hele eller vesentlige deler av databasen. Eneretten gir også vern mot gjentatt og systematisk utnytting av uvesentlige deler av databasen, dersom dette skader den normale bruken av databasen eller urimelig tilsidesetter fremstillerens legitime interesser.<br><br>Dersom dataene som ønskes delt er omfattet av databasevernet, er en datakonsumment forhindret fra å utnytte databasen i strid med datatilbyderens enerett, med mindre dataene er merket med en lisens som gjør unntak fra databasevernet<br><br>NLOD lisensen gjør ikke unntak fra databasevernet. Dette betyr at du ikke kan dele dataene dersom de oppfyller lovens vilkår er omfattet av databasevernet, med mindre du har samtykke fra opphaveren.<br><br>Dersom det er dine egne datasett som ønskes delt, anbefaler vi deg å heller benytte Creative Commons lisensene CC0 og CC by 4.0. Ettersom disse lisensene gjør unntak fra databasevernet og åpner opp for mer utstrakt deling av data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "intangible.license",
+                "operator": "eq",
+                "value": "other"
+              },
+              "children": [
+                {
+                  "id": "intangible.license.other.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "intangible.license.other.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Basert på ditt svar kan vi ikke svare på hvilke forpliktelser som følger bruken av de aktuelle dataene. Vi anbefaler deg å lese lisensvilkårene nøye og blant annet hvilke rettigheter/plikter du har med tanke på kopiering, bruk, tilgjengeliggjøring, kreditering etc."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "intangible.license",
+                "operator": "eq",
+                "value": "none"
+              },
+              "children": [
+                {
+                  "id": "intangible.license.none.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "intangible.license.none.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dersom det ikke foreligger noen lisens, vil dataene fortsatt være underlagt åndsverksloven og tilhørende lovgivning. Se åndsverksloven for mer informasjon: Åndsverkloven - Lovdata Pro"
                     }
                   ]
                 }
@@ -541,9 +603,9 @@
           "id": "intangible.secret",
           "property": "intangible.secret",
           "type": "Radio",
-          "heading": "Inneholder dataene forretningshemmeligheter?",
-          "summary": "Hva sier loven?",
-          "details": "§ 2.Definisjoner - Med forretningshemmeligheter menes opplysninger som<ol type=\"a\"><li>er hemmelige i den forstand at opplysningene ikke som helhet, eller slik de er satt sammen eller ordnet, er allment kjent eller lett tilgjengelig</li><li>har kommersiell verdi fordi de er hemmelige</li><li>innehaveren har truffet rimelige tiltak for å holde hemmelige</li></ol><br><br>Alminnelige erfaringer og ferdigheter som en arbeidstaker har tilegnet seg under et ansettelsesforhold, utgjør ikke en forretningshemmelighet.<br><br>Med innehaver av en forretningshemmelighet menes en fysisk eller juridisk person som rettmessig råder over en forretningshemmelighet.",
+          "heading": "Er opplysningene hemmelige?",
+          "summary": "Informasjon",
+          "details": "Med hemmelig menes at «Opplysningen må ikke være alminnelig kjent eller umiddelbart tilgjengelig i sin helhet eller sammensetning for personer i de kretser som normalt «beskæftiger» seg med denne typen opplysninger», og at «opplysningene ikke nødvendigvis behøver å være hemmelige hver for seg, men at sammenstillingen av opplysninger tilhører noe som ikke er lett tilgjengelig for andre».",
           "options": [
             {
               "id": "intangible.secret.yes",
@@ -570,60 +632,86 @@
               },
               "children": [
                 {
-                  "id": "intangible.secret.error",
-                  "type": "Error",
-                  "children": [
+                  "id": "intangible.value",
+                  "property": "intangible.value",
+                  "type": "Radio",
+                  "heading": "Har opplysningene kommersiell verdi fordi de er hemmelige?",
+                  "summary": "Informasjon",
+                  "details": "Kommersiell verdi omfatter både faktisk og potensiell kommersiell verdi. For faktisk verdi inngår uberettiget tilegnelse eller bruk «på en måte som undergraver personens vitenskapelige og tekniske potensiale, forretningsmessige eller finansielle interesser, strategiske plasseringer eller evne til å konkurrere». Som potensiell verdi inngår det at det «ikke er nødvendig at opplysningene benyttes på en måte som genererer inntekt, men at det er tilstrekkelig at de vurderes som verdifulle av kunder eller konkurrenter».",
+                  "options": [
                     {
-                      "id": "intangible.secret.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "id": "intangible.value.yes",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": "yes"
+                    },
+                    {
+                      "id": "intangible.value.no",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": "no"
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "intangible.data",
-          "property": "intangible.data",
-          "type": "Radio",
-          "heading": "Utgjør dataene du har lyst til å dele en vesentlig eller uvesentlig del av en database som tilhører noen andre?",
-          "options": [
-            {
-              "id": "intangible.data.yes",
-              "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
-            },
-            {
-              "id": "intangible.data.no",
-              "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
-            }
-          ]
-        },
-        {
-          "type": "Branch",
-          "branches": [
-            {
-              "test": {
-                "field": "intangible.data",
-                "operator": "eq",
-                "value": "yes"
-              },
-              "children": [
+                },
                 {
-                  "id": "intangible.data.error",
-                  "type": "Error",
-                  "children": [
+                  "type": "Branch",
+                  "branches": [
                     {
-                      "id": "intangible.data.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "Dataene kan ikke deles, dersom det foreligger en [sett inn] som begrenser eller forbyr informasjonen i dataene å deles.  Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "test": {
+                        "field": "intangible.value",
+                        "operator": "eq",
+                        "value": "yes"
+                      },
+                      "children": [
+                        {
+                          "id": "intangible.measures",
+                          "property": "intangible.measures",
+                          "type": "Radio",
+                          "heading": "Har innehaveren av forretningshemmeligheten iverksatt rimelige tiltak for å sikre hemmelighold?",
+                          "summary": "Informasjon",
+                          "details": "Hva som er et rimelig tiltak, må vurderes konkret i lys av omstendighetene. Direktivet (Directive (EU) 2016/943) gir ingen veiledning til hva som ligger i dette, eller hvilke formkrav som må følges. Det forutsettes imidlertid at «innehaveren av forretningshemmeligheten aktivt har foretatt seg noe for å beskytte opplysningene».",
+                          "options": [
+                            {
+                              "id": "intangible.measures.yes",
+                              "type": "Answer",
+                              "heading": "Ja",
+                              "value": "yes"
+                            },
+                            {
+                              "id": "intangible.measures.no",
+                              "type": "Answer",
+                              "heading": "Nei",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Branch",
+                          "branches": [
+                            {
+                              "test": {
+                                "field": "intangible.measures",
+                                "operator": "eq",
+                                "value": "yes"
+                              },
+                              "children": [
+                                {
+                                  "id": "intangible.measures.error",
+                                  "type": "Error",
+                                  "children": [
+                                    {
+                                      "id": "intangible.measures.error.msg",
+                                      "type": "Text",
+                                      "warning": true,
+                                      "text": "Du kan ikke dele de aktuelle dataene, ettersom innholdet eller selve dataene kan defineres som forretningshemmeligheter og nyter særlig beskyttelse.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Vurdere om det er mulig å begrense delingen til de datasettene som ikke er eller inneholder forretningshemmeligheter.</li><li>Innhente skriftlig bekreftelse/samtykke fra «eieren» av forretningshemmeligheten på at dataene kan deles.</li></ol>"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
