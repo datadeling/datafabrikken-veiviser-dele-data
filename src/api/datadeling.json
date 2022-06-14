@@ -676,7 +676,7 @@
                       "id": "protection.damage.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "???"
+                      "text": "Sikkerhetsloven stiller krav om at virksomheten skal sørge for et forsvarlig sikkerhetsnivå for skjermingsverdige verdier. Dette innebærer å beskytte verdiene mot tilsiktede handlinger som direkte eller indirekte kan føre til konsekvenser for grunnleggende nasjonale funksjoner og nasjonale sikkerhetsinteresser, og sørge for at skjermingsverdig informasjonen ikke blir kjent for uvedkommende, går tapt, blir endret, eller blir utilgjengelig. For å oppnå et forsvarlig sikkerhetsnivå stiller sikkerhetsloven krav til sikkerhetsstyring. Se mer på <a href=\"https://nsm.no/fagomrader/sikkerhetsstyring/\">Sikkerhetsstyring - Nasjonal sikkerhetsmyndighet (nsm.no)</a>."
                     }
                   ]
                 }
