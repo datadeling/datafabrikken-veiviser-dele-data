@@ -543,7 +543,7 @@
                       "id": "intangible.license.none.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dersom det ikke foreligger noen lisens, vil dataene fortsatt være underlagt åndsverksloven og tilhørende lovgivning. Se åndsverksloven for mer informasjon: Åndsverkloven - Lovdata Pro"
+                      "text": "Dersom det ikke foreligger noen lisens, vil dataene fortsatt være underlagt åndsverksloven og tilhørende lovgivning. Se åndsverksloven for mer informasjon: <a href=\"https://lovdata.no/dokument/NL/lov/2018-06-15-40?q=%C3%A5vl\">Åndsverkloven - Lovdata Pro</a>"
                     }
                   ]
                 }
