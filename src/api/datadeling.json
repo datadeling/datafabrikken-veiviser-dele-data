@@ -16,7 +16,7 @@
           "heading": "Inneholder dataene du ønsker å dele personopplysninger?",
           "text": "Hva er en personopplysning? Personopplysninger er alle opplysninger og vurderinger som kan knyttes til deg som enkeltperson.",
           "summary": "Se eksempler og tips",
-          "details": "<b>Eksempler</b><br>Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.<br><br>Videre er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.<br><br>Opplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette.<br><br><br><b>Tips</b><br>Vurder hvorvidt dataene lar seg dele uten personopplysninger:<ol><li>Dersom du kan dele dataene uten å dele personopplysningene, vil ikke personvernforordningens krav knyttet til behandling av personopplysninger regulere delingen.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger. Les mer på Datatilsynets informasjonssider om anonymisering, samt i deres veileder fra 2015 som inneholder relevant informasjon om hvordan anonymisering bør gjennomføres for å fjerne faren for reidentifisering</li></ol>",
+          "details": "<b>Eksempler</b><br>Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.<br><br>Videre er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.<br><br>Opplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette.<br><br><br><b>Tips</b><br>Vurder hvorvidt dataene lar seg dele uten personopplysninger:<ol><li>Dersom du kan dele dataene uten å dele personopplysningene, vil ikke personvernforordningens krav knyttet til behandling av personopplysninger regulere delingen.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger. Les mer på Datatilsynets informasjonssider om anonymisering, samt i deres veileder fra 2015 som inneholder relevant informasjon om hvordan anonymisering bør gjennomføres for å fjerne faren for reidentifisering: <a href=\"https://www.datatilsynet.no/globalassets/global/dokumenter-pdfer-skjema-ol/regelverk/veiledere/anonymisering-veileder-041115.pdf\">anonymisering-veileder-041115.pdf (datatilsynet.no)</a></li></ol>",
           "options": [
             {
               "id": "personal.data.no",
@@ -53,14 +53,14 @@
                       "id": "sharing.basis.consent",
                       "type": "Answer",
                       "heading": "Samtykke",
-                      "text": "For at et samtykke skal være gyldig, må det være frivillig, spesifikt, informert, utvetydig, gitt gjennom en aktiv handling, dokumenterbart, mulig å trekke tilbake like lett som det ble gitt.",
+                      "text": "For at et samtykke skal være gyldig, må det være frivillig, spesifikt, informert, utvetydig, gitt gjennom en aktiv handling, dokumenterbart og mulig å trekke tilbake like lett som det ble gitt.",
                       "value": "consent"
                     },
                     {
                       "id": "sharing.basis.agreement",
                       "type": "Answer",
                       "heading": "Nødvendig for å oppfylle en avtale",
-                      "text": "som den registrerte ( xxxxxxxxx)er part i, eller for å gjennomføre tiltak på den registrertes anmodning før en avtaleinngåelse.",
+                      "text": "som den registrerte er part i, eller for å gjennomføre tiltak på den registrertes anmodning før en avtaleinngåelse.",
                       "value": "agreement"
                     },
                     {
@@ -192,7 +192,7 @@
                       "id": "sensitive.sharing.1",
                       "type": "Answer",
                       "heading": "Uttrykkelig samtykke",
-                      "text": "Den registrerte hat gitt samtykke på en ekstra tydelig måte. Et eksempel på et uttrykkelig samtykke er signatur på en samtykkeerklæring eller lydopptak av samtykke. I enkelte tilfeller er det ikke adgang til å bruke uttrykkelig samtykke som rettslig grunnlag, jf. Unionsretten eller nasjonal lovgivning.",
+                      "text": "Den registrerte har gitt samtykke på en ekstra tydelig måte. Et eksempel på et uttrykkelig samtykke er signatur på en samtykkeerklæring eller lydopptak av samtykke. I enkelte tilfeller er det ikke adgang til å bruke uttrykkelig samtykke som rettslig grunnlag, jf. Unionsretten eller nasjonal lovgivning.",
                       "value": "1"
                     },
                     {
@@ -303,7 +303,7 @@
       "id": "confidentiality",
       "type": "Page",
       "heading": "Taushetsplikt",
-      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder denne taushetsbelagt informasjon vil du i utgangspunktet være avskåret fra å dele dataene.<br><br>Taushetsplikt kan følge av lov, instruks eller avtale. Hvilke opplysninger som er omfattet av taushetsplikt, vil bero på den nærmere bestemmelse eller avtale som fastsetter taushetsplikt.",
+      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder taushetsbelagt informasjon vil du i utgangspunktet være avskåret fra å dele dataene.<br><br>Taushetsplikt kan følge av lov, instruks eller avtale. Hvilke opplysninger som er omfattet av taushetsplikt, vil bero på den nærmere bestemmelse eller avtale som fastsetter taushetsplikt.",
       "children": [
         {
           "id": "confidentiality.question",
@@ -393,8 +393,8 @@
           "id": "contractuallaw.sign",
           "property": "contractuallaw.sign",
           "type": "Radio",
-          "heading": "Har du signert på en avtale som pålegger deg å ikke dele informasjonen i de bestemte data eller dataene selv?",
-          "text": "Avtalerettslige begrensninger knytter til å dele informasjon i bestemte data eller dataene selv, kan både følge av en hel avtale som uttrykkelig regulerer fortrolighet eller av en eller flere klausuler som inngår i en avtale.<br><br>Typiske eksempler på slike avtaler er taushets- eller fortrolighetsavtaler, også kjent som  Non-Disclosure Agreement eller NDA på engelsk.",
+          "heading": "Har du signert på en avtale som pålegger deg å ikke dele informasjonen i de bestemte data, eller dataene selv?",
+          "text": "Avtalerettslige begrensninger knyttet til å dele informasjon i bestemte data eller dataene selv, kan både følge av en hel avtale som uttrykkelig regulerer fortrolighet eller av en eller flere klausuler som inngår i en avtale.<br><br>Typiske eksempler på slike avtaler er taushets- eller fortrolighetsavtaler, også kjent som  Non-Disclosure Agreement eller NDA på engelsk.",
           "options": [
             {
               "id": "contractuallaw.sign.yes",
@@ -428,7 +428,7 @@
                       "id": "contractuallaw.sign.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
                     }
                   ]
                 }
