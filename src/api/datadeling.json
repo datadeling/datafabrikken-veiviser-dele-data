@@ -346,24 +346,9 @@
           "branches": [
             {
               "test": {
-                "type": "or",
-                "clauses": [
-                  {
-                    "field": "confidentiality.question",
-                    "operator": "eq",
-                    "value": "duty"
-                  },
-                  {
-                    "field": "confidentiality.question",
-                    "operator": "eq",
-                    "value": "technical"
-                  },
-                  {
-                    "field": "confidentiality.question",
-                    "operator": "eq",
-                    "value": "personal"
-                  }
-                ]
+                "field": "confidentiality.question",
+                "operator": "eq",
+                "value": "personal"
               },
               "children": [
                 {
@@ -374,7 +359,49 @@
                       "id": "confidentiality.question.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger.<br><br>Dataene kan ikke deles, dersom de er omfattet av taushetsplikt. Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Søke om dispensasjon fra taushetsplikten eller samtykke til å dele opplysningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som de personlige forholdene angår.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "confidentiality.question",
+                "operator": "eq",
+                "value": "technical"
+              },
+              "children": [
+                {
+                  "id": "confidentiality.question.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "confidentiality.question.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som er rettighetshaver av informasjonen knyttet til de forretningsmessige forholdene som er underlagt taushetsplikt.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "confidentiality.question",
+                "operator": "eq",
+                "value": "duty"
+              },
+              "children": [
+                {
+                  "id": "confidentiality.question.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "confidentiality.question.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.<br><br>Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se om lovhjemmelen som hjemler taushetsplikten inneholder et unntak som opphever plikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
                     }
                   ]
                 }
