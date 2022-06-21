@@ -421,7 +421,7 @@
           "property": "contractuallaw.sign",
           "type": "Radio",
           "heading": "Har du signert på en avtale som pålegger deg å ikke dele informasjonen i de bestemte data, eller dataene selv?",
-          "text": "Avtalerettslige begrensninger knyttet til å dele informasjon i bestemte data eller dataene selv, kan både følge av en hel avtale som uttrykkelig regulerer fortrolighet eller av en eller flere klausuler som inngår i en avtale.<br><br>Typiske eksempler på slike avtaler er taushets- eller fortrolighetsavtaler, også kjent som  Non-Disclosure Agreement eller NDA på engelsk.",
+          "text": "Typiske eksempler på slike avtaler er taushets- eller fortrolighetsavtaler, også kjent som  Non-Disclosure Agreement eller NDA på engelsk.<br><br>Enkelte avtaler begrenser adgangen til å dele informasjon i bestemte data eller dataene selv, kan både følge av en hel avtale som uttrykkelig regulerer fortrolighet eller av en eller flere klausuler som inngår i en avtale.",
           "options": [
             {
               "id": "contractuallaw.sign.yes",
