@@ -8,16 +8,15 @@
       "id": "personalinformation",
       "type": "Page",
       "heading": "Personopplysninger",
-      "lead": "xxx",
       "children": [
         {
           "id": "personal.data",
           "property": "personal.data",
           "type": "Radio",
-          "heading": "Inneholder dataene du ønsker å dele personopplysninger?",
-          "text": "Hva er en personopplysning? Personopplysninger er alle opplysninger og vurderinger som kan knyttes til deg som enkeltperson.",
+          "heading": "Er det personopplysninger i dataene du vil dele?",
+          "text": "Hva er en personopplysning? Personopplysninger er alle opplysninger og vurderinger som kan knyttes til en enkelt person.",
           "summary": "Se eksempler og tips",
-          "details": "<b>Eksempler</b><br>Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.<br><br>Videre er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.<br><br>Opplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette.<br><br><br><b>Tips</b><br>Vurder hvorvidt dataene lar seg dele uten personopplysninger:<ol><li>Dersom du kan dele dataene uten å dele personopplysningene, vil ikke personvernforordningens krav knyttet til behandling av personopplysninger regulere delingen.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger. Les mer på Datatilsynets informasjonssider om anonymisering, samt i deres veileder fra 2015 som inneholder relevant informasjon om hvordan anonymisering bør gjennomføres for å fjerne faren for reidentifisering</li></ol>",
+          "details": "<b>Eksempler</b><br>Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.<br><br>Videre er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.<br><br>Opplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette.<br><br><br><b>Tips</b><br>Gjør en vurdering om dataene kan deles uten personopplysninger.<ol><li>Dersom du kan dele dataene uten å dele personopplysningene, vil ikke personvernforordningens krav knyttet til behandling av personopplysninger regulere delingen.</li><li>Vurder om det er mulig å anonymisere personopplysningene i datasettet. Opplysningene må ikke kunne reidentifiseres, altså brukes på en måte som gjør det mulig å identifisere personopplysninger igjen. Les mer på Datatilsynets informasjonssider om anonymisering, samt i deres veileder fra 2015 som inneholder relevant informasjon om hvordan anonymisering bør gjennomføres for å fjerne faren for reidentifisering: <a href=\"https://www.datatilsynet.no/globalassets/global/dokumenter-pdfer-skjema-ol/regelverk/veiledere/anonymisering-veileder-041115.pdf\">anonymisering-veileder-041115.pdf (datatilsynet.no)</a></li></ol>",
           "options": [
             {
               "id": "personal.data.no",
@@ -47,48 +46,48 @@
                   "id": "sharing.basis",
                   "property": "sharing.basis",
                   "type": "Radio",
-                  "heading": "Har du et av følgende grunnlag for å dele personopplysninger",
-                  "text": "All behandling av personopplysninger må ha et rettslig grunnlag for å være lov. Virksomheten må derfor ha identifisert om det finnes et behandlingsgrunnlag før opplysningene kan deles. Hvis ikke det finnes, er delingen av personopplysningene ulovlig.<br><br>Det må finnes et behandlingsgrunnlag for delingen av hver enkelt personopplysning til hvert enkelt formål. Dersom flere behandlingsgrunnlag kan passe, må virksomheten bestemme seg for ett grunnlag per formål.<br><br>Virksomheten har plikt til å informere den personopplysningene angår om på hvilket grunnlag personopplysningene deres behandles. Dette gjøres vanligvis i en personvernerklæring.",
+                  "heading": "Har du et av følgende grunnlag for å dele personopplysninger?",
+                  "text": "All behandling av personopplysninger må ha et rettslig grunnlag for å være lov. Virksomheten må derfor ha identifisert om det finnes et <a href=\"https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/behandlingsgrunnlag/veileder-om-behandlingsgrunnlag/\">behandlingsgrunnlag</a> før opplysningene kan deles. Hvis dette ikke finnes, er delingen av personopplysningene ulovlig.<br><br>Det må finnes et behandlingsgrunnlag for delingen av hver enkelt personopplysning, til hvert enkelt formål. Dersom flere behandlingsgrunnlag kan passe, må virksomheten bestemme seg for ett grunnlag per formål.<br><br>Virksomheten har plikt til å informere den personopplysningene angår om på hvilket grunnlag personopplysningene deres behandles. Dette gjøres vanligvis i en personvernerklæring.<br><br>Personopplysninger er «enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»)<br><br>Har du et av følgende grunnlag for å dele data som inneholder personopplysninger?",
                   "options": [
                     {
                       "id": "sharing.basis.consent",
                       "type": "Answer",
-                      "heading": "Samtykke",
-                      "text": "For at et samtykke skal være gyldig, må det være frivillig, spesifikt, informert, utvetydig, gitt gjennom en aktiv handling, dokumenterbart, mulig å trekke tilbake like lett som det ble gitt.",
+                      "heading": "Den registrerte har samtykket til at dataene deles",
+                      "text": "For at et samtykke skal være gyldig, må det være frivillig, spesifikt, informert, utvetydig, gitt gjennom en aktiv handling, dokumenterbart og mulig å trekke tilbake like lett som det ble gitt.",
                       "value": "consent"
                     },
                     {
                       "id": "sharing.basis.agreement",
                       "type": "Answer",
-                      "heading": "Nødvendig for å oppfylle en avtale",
-                      "text": "som den registrerte ( xxxxxxxxx)er part i, eller for å gjennomføre tiltak på den registrertes anmodning før en avtaleinngåelse.",
+                      "heading": "Det er nødvendig å dele dataene for å oppfylle en avtale eller et tiltak",
+                      "text": "Du kan dele data som inneholder personopplysninger, dersom det er nødvendig for å oppfylle en avtale med den/de personopplysningene identifiserer. Det samme gjelder der behandlingen er nødvendig for å gjennomføre tiltak som den enkelte har spurt etter før avtaleinngåelsen.<br>Dersom den registrerte er part i en avtale som forutsetter at de aktuelle dataene deles, vil det kunne foreligge et grunnlag for å dele dataene med den registrerte at dataene deles",
                       "value": "agreement"
                     },
                     {
                       "id": "sharing.basis.duty",
                       "type": "Answer",
-                      "heading": "Nødvendig for å oppfylle en rettslig plikt",
-                      "text": "Som  har hjemmel i lov eller forskrift. Det vil si at behandlingsgrunnlaget må fastsettes i en lov som den behandlingsansvarlige (den som ønsker å dele personopplysninger) er underlagt.",
+                      "heading": "Det er nødvendig for å oppfylle en rettslig plikt at dataene deles",
+                      "text": "Denne rettslige plikten må ha hjemmel i lov eller forskrift",
                       "value": "duty"
                     },
                     {
                       "id": "sharing.basis.interests",
                       "type": "Answer",
-                      "heading": "Nødvendig for å beskytte vitale interesser",
+                      "heading": "Det er nødvendig for å beskytte vitale interesser at dataene deles",
                       "text": "En virksomhet kan behandle personopplysninger dersom det er nødvendig for å beskytte den registrertes eller en annen persons vitale interesser. Dette behandlingsgrunnlaget er svært snevert. Det må være snakk om behandling av personopplysninger i forbindelse med liv og død eller fare for helsa.",
                       "value": "interests"
                     },
                     {
                       "id": "sharing.basis.public",
                       "type": "Answer",
-                      "heading": "Nødvendig for å utføre en oppgave i allmennhetens interesse eller utøve offentlig myndighet",
+                      "heading": "Det er nødvendig for å utføre en oppgave i allmennhetenes interesse eller utøve offentlig myndighet at dataene deles",
                       "text": "En virksomhet kan behandle personopplysninger dersom det er nødvendig for å utføre en oppgave i allmennhetens interesse. Det samme gjelder dersom behandlingen er nødvendig for å utøve offentlig myndighet som den behandlingsansvarlige er pålagt.",
                       "value": "public"
                     },
                     {
                       "id": "sharing.basis.balancing",
                       "type": "Answer",
-                      "heading": "Nødvendig for å ivareta legitime interesser – interesseavveining",
+                      "heading": "Det er nødvendig for å ivareta legitime interesser (interesseavveining) at dataene deles",
                       "text": "En virksomhet kan behandle personopplysninger dersom det er nødvendig for å vareta en berettiget interesse som veier tyngre enn hensynet til den enkeltes personvern.",
                       "value": "balancing"
                     },
@@ -193,7 +192,7 @@
                       "id": "sensitive.sharing.1",
                       "type": "Answer",
                       "heading": "Uttrykkelig samtykke",
-                      "text": "Den registrerte hat gitt samtykke på en ekstra tydelig måte. Et eksempel på et uttrykkelig samtykke er signatur på en samtykkeerklæring eller lydopptak av samtykke. I enkelte tilfeller er det ikke adgang til å bruke uttrykkelig samtykke som rettslig grunnlag, jf. Unionsretten eller nasjonal lovgivning.",
+                      "text": "Den registrerte har gitt samtykke på en ekstra tydelig måte. Et eksempel på et uttrykkelig samtykke er signatur på en samtykkeerklæring eller lydopptak av samtykke. I enkelte tilfeller er det ikke adgang til å bruke uttrykkelig samtykke som rettslig grunnlag, jf. Unionsretten eller nasjonal lovgivning.",
                       "value": "1"
                     },
                     {
@@ -304,7 +303,7 @@
       "id": "confidentiality",
       "type": "Page",
       "heading": "Taushetsplikt",
-      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder denne taushetsbelagt informasjon vil du i utgangspunktet være avskåret fra å dele dataene.<br><br>Taushetsplikt kan følge av lov, instruks eller avtale. Hvilke opplysninger som er omfattet av taushetsplikt, vil bero på den nærmere bestemmelse eller avtale som fastsetter taushetsplikt.",
+      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder taushetsbelagt informasjon vil du i utgangspunktet være avskåret fra å dele dataene.<br><br>Taushetsplikt kan følge av lov, instruks eller avtale. Hvilke opplysninger som er omfattet av taushetsplikt, vil bero på den nærmere bestemmelse eller avtale som fastsetter taushetsplikt.",
       "children": [
         {
           "id": "confidentiality.question",
@@ -347,24 +346,9 @@
           "branches": [
             {
               "test": {
-                "type": "or",
-                "clauses": [
-                  {
-                    "field": "confidentiality.question",
-                    "operator": "eq",
-                    "value": "duty"
-                  },
-                  {
-                    "field": "confidentiality.question",
-                    "operator": "eq",
-                    "value": "technical"
-                  },
-                  {
-                    "field": "confidentiality.question",
-                    "operator": "eq",
-                    "value": "personal"
-                  }
-                ]
+                "field": "confidentiality.question",
+                "operator": "eq",
+                "value": "personal"
               },
               "children": [
                 {
@@ -375,7 +359,49 @@
                       "id": "confidentiality.question.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger.<br><br>Dataene kan ikke deles, dersom de er omfattet av taushetsplikt. Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Søke om dispensasjon fra taushetsplikten eller samtykke til å dele opplysningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som de personlige forholdene angår.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "confidentiality.question",
+                "operator": "eq",
+                "value": "technical"
+              },
+              "children": [
+                {
+                  "id": "confidentiality.question.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "confidentiality.question.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som er rettighetshaver av informasjonen knyttet til de forretningsmessige forholdene som er underlagt taushetsplikt.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "confidentiality.question",
+                "operator": "eq",
+                "value": "duty"
+              },
+              "children": [
+                {
+                  "id": "confidentiality.question.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "confidentiality.question.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.<br><br>Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se om lovhjemmelen som hjemler taushetsplikten inneholder et unntak som opphever plikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
                     }
                   ]
                 }
@@ -394,8 +420,8 @@
           "id": "contractuallaw.sign",
           "property": "contractuallaw.sign",
           "type": "Radio",
-          "heading": "Har du signert på en avtale som pålegger deg å ikke dele informasjonen i de bestemte data eller dataene selv?",
-          "text": "Avtalerettslige begrensninger knytter til å dele informasjon i bestemte data eller dataene selv, kan både følge av en hel avtale som uttrykkelig regulerer fortrolighet eller av en eller flere klausuler som inngår i en avtale.<br><br>Typiske eksempler på slike avtaler er taushets- eller fortrolighetsavtaler, også kjent som  Non-Disclosure Agreement eller NDA på engelsk.",
+          "heading": "Har du signert på en avtale som pålegger deg å ikke dele informasjonen i de bestemte data, eller dataene selv?",
+          "text": "Typiske eksempler på slike avtaler er taushets- eller fortrolighetsavtaler, også kjent som  Non-Disclosure Agreement eller NDA på engelsk.<br><br>Enkelte avtaler begrenser adgangen til å dele informasjon i bestemte data eller dataene selv, kan både følge av en hel avtale som uttrykkelig regulerer fortrolighet eller av en eller flere klausuler som inngår i en avtale.",
           "options": [
             {
               "id": "contractuallaw.sign.yes",
@@ -429,7 +455,7 @@
                       "id": "contractuallaw.sign.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
                     }
                   ]
                 }
@@ -448,19 +474,39 @@
           "id": "intangible.license",
           "property": "intangible.license",
           "type": "Radio",
-          "heading": "Foreligger det en lisens som begrenser adgangen til å dele dataene uten samtykke fra rettighetshaver?",
+          "heading": "Er dataene merket med en lisens?",
+          "summary": "Informasjon",
+          "details": "En lisens fungerer som en standardisert avtale mellom en lisensgiver (den som «eier» rettigheten) og en eller flere lisenstakere (de som ønsker å utnytte den aktuelle rettigheten). Et datasett kan være merket med en lisens som beskriver rammene for hvordan datasettet kan og skal brukes. Lisensen kan for eksempel gi deg rett til å kopiere, bruke og tilgjengeliggjøre informasjon gitt at du navngir bidragsyterne og oppfyller de vilkår som er beskrevet lisensen. Bruk av datasett merket med en aktuell lisens vil som regel innebære en aksept av vilkårene i lisensen, inkludert eventuelle ansvarsfraskrivelser. Det er derfor viktig at du leser lisensen slik at en er innforstått med hvilke forpliktelser som følger en eventuell bruk av dataene.",
           "options": [
             {
-              "id": "intangible.license.yes",
+              "id": "intangible.license.cco",
               "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
+              "heading": "CCO lisens",
+              "value": "cco"
             },
             {
-              "id": "intangible.license.no",
+              "id": "intangible.license.cc",
               "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
+              "heading": "CC BY 4.0",
+              "value": "cc"
+            },
+            {
+              "id": "intangible.license.nlod",
+              "type": "Answer",
+              "heading": "Norsk lisens for offentlig data (NLOD)",
+              "value": "nlod"
+            },
+            {
+              "id": "intangible.license.other",
+              "type": "Answer",
+              "heading": "En annen lisens",
+              "value": "other"
+            },
+            {
+              "id": "intangible.license.none",
+              "type": "Answer",
+              "heading": "Ingen lisens",
+              "value": "none"
             }
           ]
         },
@@ -471,18 +517,60 @@
               "test": {
                 "field": "intangible.license",
                 "operator": "eq",
-                "value": "yes"
+                "value": "nlod"
               },
               "children": [
                 {
-                  "id": "intangible.license.error",
+                  "id": "intangible.license.nlod.error",
                   "type": "Error",
                   "children": [
                     {
-                      "id": "intangible.license.error.msg",
+                      "id": "intangible.license.nlod.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Samlinger av data kan utgjøre en database. Dersom vilkårene i åndsverkloven § 24 er oppfylt, kan den som har fremstilt databasen, få en enerett til å råde over hele eller vesentlige deler av databasens innhold.<br><br>Lovens vilkår er at innsamling, kontroll eller presentasjon av innholdet i databasen innebærer en “vesentlig investering”. Eneretten innebærer en rett til å forby andre å kopiere eller å gjøre databasen tilgjengelig for allmennheten så fremt det gjelder hele eller vesentlige deler av databasen. Eneretten gir også vern mot gjentatt og systematisk utnytting av uvesentlige deler av databasen, dersom dette skader den normale bruken av databasen eller urimelig tilsidesetter fremstillerens legitime interesser.<br><br>Dersom dataene som ønskes delt er omfattet av databasevernet, er en datakonsumment forhindret fra å utnytte databasen i strid med datatilbyderens enerett, med mindre dataene er merket med en lisens som gjør unntak fra databasevernet<br><br>NLOD lisensen gjør ikke unntak fra databasevernet. Dette betyr at du ikke kan dele dataene dersom de oppfyller lovens vilkår er omfattet av databasevernet, med mindre du har samtykke fra opphaveren.<br><br>Dersom det er dine egne datasett som ønskes delt, anbefaler vi deg å heller benytte Creative Commons lisensene CC0 og CC by 4.0. Ettersom disse lisensene gjør unntak fra databasevernet og åpner opp for mer utstrakt deling av data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "intangible.license",
+                "operator": "eq",
+                "value": "other"
+              },
+              "children": [
+                {
+                  "id": "intangible.license.other.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "intangible.license.other.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Basert på ditt svar kan vi ikke svare på hvilke forpliktelser som følger bruken av de aktuelle dataene. Vi anbefaler deg å lese lisensvilkårene nøye og blant annet hvilke rettigheter/plikter du har med tanke på kopiering, bruk, tilgjengeliggjøring, kreditering etc."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "intangible.license",
+                "operator": "eq",
+                "value": "none"
+              },
+              "children": [
+                {
+                  "id": "intangible.license.none.error",
+                  "type": "Error",
+                  "children": [
+                    {
+                      "id": "intangible.license.none.error.msg",
+                      "type": "Text",
+                      "warning": true,
+                      "text": "Dersom det ikke foreligger noen lisens, vil dataene fortsatt være underlagt åndsverksloven og tilhørende lovgivning. Se åndsverksloven for mer informasjon: <a href=\"https://lovdata.no/dokument/NL/lov/2018-06-15-40?q=%C3%A5vl\">Åndsverkloven - Lovdata Pro</a>"
                     }
                   ]
                 }
@@ -542,9 +630,9 @@
           "id": "intangible.secret",
           "property": "intangible.secret",
           "type": "Radio",
-          "heading": "Inneholder dataene forretningshemmeligheter?",
-          "summary": "Hva sier loven?",
-          "details": "§ 2.Definisjoner - Med forretningshemmeligheter menes opplysninger som<ol type=\"a\"><li>er hemmelige i den forstand at opplysningene ikke som helhet, eller slik de er satt sammen eller ordnet, er allment kjent eller lett tilgjengelig</li><li>har kommersiell verdi fordi de er hemmelige</li><li>innehaveren har truffet rimelige tiltak for å holde hemmelige</li></ol><br><br>Alminnelige erfaringer og ferdigheter som en arbeidstaker har tilegnet seg under et ansettelsesforhold, utgjør ikke en forretningshemmelighet.<br><br>Med innehaver av en forretningshemmelighet menes en fysisk eller juridisk person som rettmessig råder over en forretningshemmelighet.",
+          "heading": "Er opplysningene hemmelige?",
+          "summary": "Informasjon",
+          "details": "Med hemmelig menes at «Opplysningen må ikke være alminnelig kjent eller umiddelbart tilgjengelig i sin helhet eller sammensetning for personer i de kretser som normalt «beskæftiger» seg med denne typen opplysninger», og at «opplysningene ikke nødvendigvis behøver å være hemmelige hver for seg, men at sammenstillingen av opplysninger tilhører noe som ikke er lett tilgjengelig for andre».",
           "options": [
             {
               "id": "intangible.secret.yes",
@@ -571,60 +659,86 @@
               },
               "children": [
                 {
-                  "id": "intangible.secret.error",
-                  "type": "Error",
-                  "children": [
+                  "id": "intangible.value",
+                  "property": "intangible.value",
+                  "type": "Radio",
+                  "heading": "Har opplysningene kommersiell verdi fordi de er hemmelige?",
+                  "summary": "Informasjon",
+                  "details": "Kommersiell verdi omfatter både faktisk og potensiell kommersiell verdi. For faktisk verdi inngår uberettiget tilegnelse eller bruk «på en måte som undergraver personens vitenskapelige og tekniske potensiale, forretningsmessige eller finansielle interesser, strategiske plasseringer eller evne til å konkurrere». Som potensiell verdi inngår det at det «ikke er nødvendig at opplysningene benyttes på en måte som genererer inntekt, men at det er tilstrekkelig at de vurderes som verdifulle av kunder eller konkurrenter».",
+                  "options": [
                     {
-                      "id": "intangible.secret.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "id": "intangible.value.yes",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": "yes"
+                    },
+                    {
+                      "id": "intangible.value.no",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": "no"
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "intangible.data",
-          "property": "intangible.data",
-          "type": "Radio",
-          "heading": "Utgjør dataene du har lyst til å dele en vesentlig eller uvesentlig del av en database som tilhører noen andre?",
-          "options": [
-            {
-              "id": "intangible.data.yes",
-              "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
-            },
-            {
-              "id": "intangible.data.no",
-              "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
-            }
-          ]
-        },
-        {
-          "type": "Branch",
-          "branches": [
-            {
-              "test": {
-                "field": "intangible.data",
-                "operator": "eq",
-                "value": "yes"
-              },
-              "children": [
+                },
                 {
-                  "id": "intangible.data.error",
-                  "type": "Error",
-                  "children": [
+                  "type": "Branch",
+                  "branches": [
                     {
-                      "id": "intangible.data.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "Dataene kan ikke deles, dersom det foreligger en [sett inn] som begrenser eller forbyr informasjonen i dataene å deles.  Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "test": {
+                        "field": "intangible.value",
+                        "operator": "eq",
+                        "value": "yes"
+                      },
+                      "children": [
+                        {
+                          "id": "intangible.measures",
+                          "property": "intangible.measures",
+                          "type": "Radio",
+                          "heading": "Har innehaveren av forretningshemmeligheten iverksatt rimelige tiltak for å sikre hemmelighold?",
+                          "summary": "Informasjon",
+                          "details": "Hva som er et rimelig tiltak, må vurderes konkret i lys av omstendighetene. Direktivet (Directive (EU) 2016/943) gir ingen veiledning til hva som ligger i dette, eller hvilke formkrav som må følges. Det forutsettes imidlertid at «innehaveren av forretningshemmeligheten aktivt har foretatt seg noe for å beskytte opplysningene».",
+                          "options": [
+                            {
+                              "id": "intangible.measures.yes",
+                              "type": "Answer",
+                              "heading": "Ja",
+                              "value": "yes"
+                            },
+                            {
+                              "id": "intangible.measures.no",
+                              "type": "Answer",
+                              "heading": "Nei",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Branch",
+                          "branches": [
+                            {
+                              "test": {
+                                "field": "intangible.measures",
+                                "operator": "eq",
+                                "value": "yes"
+                              },
+                              "children": [
+                                {
+                                  "id": "intangible.measures.error",
+                                  "type": "Error",
+                                  "children": [
+                                    {
+                                      "id": "intangible.measures.error.msg",
+                                      "type": "Text",
+                                      "warning": true,
+                                      "text": "Du kan ikke dele de aktuelle dataene, ettersom innholdet eller selve dataene kan defineres som forretningshemmeligheter og nyter særlig beskyttelse.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Vurdere om det er mulig å begrense delingen til de datasettene som ikke er eller inneholder forretningshemmeligheter.</li><li>Innhente skriftlig bekreftelse/samtykke fra «eieren» av forretningshemmeligheten på at dataene kan deles.</li></ol>"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -677,7 +791,7 @@
                       "id": "protection.damage.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "???"
+                      "text": "Sikkerhetsloven stiller krav om at virksomheten skal sørge for et forsvarlig sikkerhetsnivå for skjermingsverdige verdier. Dette innebærer å beskytte verdiene mot tilsiktede handlinger som direkte eller indirekte kan føre til konsekvenser for grunnleggende nasjonale funksjoner og nasjonale sikkerhetsinteresser, og sørge for at skjermingsverdig informasjonen ikke blir kjent for uvedkommende, går tapt, blir endret, eller blir utilgjengelig. For å oppnå et forsvarlig sikkerhetsnivå stiller sikkerhetsloven krav til sikkerhetsstyring. Se mer på <a href=\"https://nsm.no/fagomrader/sikkerhetsstyring/\">Sikkerhetsstyring - Nasjonal sikkerhetsmyndighet (nsm.no)</a>."
                     }
                   ]
                 }
@@ -771,6 +885,32 @@
                               "value": "no"
                             }
                           ]
+                        },
+                        {
+                          "type": "Branch",
+                          "branches": [
+                            {
+                              "test": {
+                                "field": "state.aid.market",
+                                "operator": "eq",
+                                "value": "yes"
+                              },
+                              "children": [
+                                {
+                                  "id": "state.aid.market.error",
+                                  "type": "Error",
+                                  "children": [
+                                    {
+                                      "id": "state.aid.market.error.msg",
+                                      "type": "Text",
+                                      "warning": true,
+                                      "text": "Dersom det overføres data fra det offentlige til det private, slik at en eller flere private aktører får tilgang til data på bedre vilkår enn resten av markedet, kan denne overføringen utgjøre en forskjellsbehandling som innebærer ulovlig statsstøtte etter EØS-avtalens artikkel 61. Vi anbefaler deg å ta kontakt med en advokat dersom du er usikker på om det er anledning til å dele data etter statsstøtteregelverket."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -788,19 +928,21 @@
       "heading": "Konkurranserettslige begrensninger",
       "children": [
         {
-          "id": "illegal.competition",
-          "property": "illegal.competition",
+          "id": "illegal.belong",
+          "property": "illegal.belong",
           "type": "Radio",
-          "heading": "Vil delingen av data innebære et samarbeid mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte?",
+          "heading": "Tilhører du et offentlig eller privat foretak?",
+          "summary": "Informasjon",
+          "details": "Spørsmålet må tolkes i lys av konkurranseregelverket og de definisjonene som følger av konkurranseloven og tilhørende regelverk. Begrepet foretak er definert i konkurranseloven § 2 og omfatter enhver enhet som utøver privat eller offentlig ervervsvirksomhet, uavhengig av i hvilken form virksomheten utøves. Det er virksomhetens art som er avgjørende, ikke enhetens rettslige status eller finansiering.",
           "options": [
             {
-              "id": "illegal.competition.yes",
+              "id": "illegal.belong.yes",
               "type": "Answer",
               "heading": "Ja",
               "value": "yes"
             },
             {
-              "id": "illegal.competition.no",
+              "id": "illegal.belong.no",
               "type": "Answer",
               "heading": "Nei",
               "value": "no"
@@ -812,20 +954,92 @@
           "branches": [
             {
               "test": {
-                "field": "illegal.competition",
+                "field": "illegal.belong",
                 "operator": "eq",
                 "value": "yes"
               },
               "children": [
                 {
-                  "id": "illegal.competition.error",
-                  "type": "Error",
-                  "children": [
+                  "id": "illegal.economy",
+                  "property": "illegal.economy",
+                  "type": "Radio",
+                  "heading": "Ønskes dataene delt med et annet offentlig eller privat foretak som ikke tilhører samme økonomiske enhet?",
+                  "summary": "Informasjon",
+                  "details": "Samarbeid som skjer innenfor samme økonomiske enhet rammes ikke av konkurranseloven § 10.<br><br>Forbudet rammer kun samarbeid mellom to uavhengige foretak. For eksempel rammer forbudet ikke samarbeid mellom selskaper innenfor samme konsern, eller mellom agent og prinsipal.",
+                  "options": [
                     {
-                      "id": "illegal.competition.error.msg",
-                      "type": "Text",
-                      "warning": true,
-                      "text": "???"
+                      "id": "illegal.economy.yes",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": "yes"
+                    },
+                    {
+                      "id": "illegal.economy.no",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "type": "Branch",
+                  "branches": [
+                    {
+                      "test": {
+                        "field": "illegal.economy",
+                        "operator": "eq",
+                        "value": "yes"
+                      },
+                      "children": [
+                        {
+                          "id": "illegal.competition",
+                          "property": "illegal.competition",
+                          "type": "Radio",
+                          "heading": "Vil delingen av data innebære et samarbeid mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte?",
+                          "summary": "Informasjon",
+                          "details": "Konkurranseloven § 10 første ledd forbyr samarbeid mellom foretak som har til formål eller virkning å begrense konkurransen. Tilsvarende forbud finnes i EØS-avtalen artikkel 53 og TEUV artikkel 101.<br><br>Forbudet mot konkurransebegrensende samarbeid gjelder ikke bare avtaler, men også mer uformelt samarbeid som for eksempel at to konkurrenter deler data som inneholder informasjon, med sikte på å øke prisene på sine varer.",
+                          "options": [
+                            {
+                              "id": "illegal.competition.yes",
+                              "type": "Answer",
+                              "heading": "Ja",
+                              "value": "yes"
+                            },
+                            {
+                              "id": "illegal.competition.no",
+                              "type": "Answer",
+                              "heading": "Nei",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Branch",
+                          "branches": [
+                            {
+                              "test": {
+                                "field": "illegal.competition",
+                                "operator": "eq",
+                                "value": "yes"
+                              },
+                              "children": [
+                                {
+                                  "id": "illegal.competition.error",
+                                  "type": "Error",
+                                  "children": [
+                                    {
+                                      "id": "illegal.competition.error.msg",
+                                      "type": "Text",
+                                      "warning": true,
+                                      "text": "Dersom det deles data mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte er det en risiko for at det foreligger et ulovlig samarbeid etter konkurranselovens § 10.<br><br>Vi anbefaler deg å ikke dele data med konsumenten med mindre dette kan gjøres uten formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte."
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
