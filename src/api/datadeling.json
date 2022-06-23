@@ -14,21 +14,21 @@
           "property": "personal.data",
           "type": "Radio",
           "heading": "Er det personopplysninger i dataene du vil dele?",
-          "text": "Hva er en personopplysning? Personopplysninger er alle opplysninger og vurderinger som kan knyttes til en enkelt person.",
+          "text": "For at data skal være personopplysninger er det avgjørende at det finnes en tilknytning til en fysisk person. Denne koblingen kan ofte være enkel og direkte, for eksempel vil et navn eller en adresse åpenbart være koblet til en enkeltperson. Det er også tilfeller hvor koblingen er indirekte, og man trenger annen data for at informasjonen kan kobles til en enkeltperson. Dette vil likevel være regnet som en personopplysning, og omfattet av loven. Dette betyr at det må vurderes konkret om de aktuelle opplysningene er å regne som personopplysninger eller ikke, og at opplysningene må vurderes i sammenheng.",
           "summary": "Se eksempler og tips",
-          "details": "<b>Eksempler</b><br>Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.<br><br>Videre er en dynamisk IP-adresse i gitte tilfeller også definert som personopplysning. Registreringsnummeret på en bil kan være en personopplysning hvis det kan knyttes til en bestemt person, mens ikke hvis det står på en firmabil som benyttes av flere.<br><br>Opplysninger om atferdsmønstre er også regnet som personopplysninger. Opplysninger om hva du handler, hvilke butikker du går i, hvilke tv-serier du ser på, hvor du fysisk beveger deg i løpet av en dag og hva du søker etter på nettet er alt sammen eksempler på dette.<br><br><br><b>Tips</b><br>Gjør en vurdering om dataene kan deles uten personopplysninger.<ol><li>Dersom du kan dele dataene uten å dele personopplysningene, vil ikke personvernforordningens krav knyttet til behandling av personopplysninger regulere delingen.</li><li>Vurder om det er mulig å anonymisere personopplysningene i datasettet. Opplysningene må ikke kunne reidentifiseres, altså brukes på en måte som gjør det mulig å identifisere personopplysninger igjen. Les mer på Datatilsynets informasjonssider om anonymisering, samt i deres veileder fra 2015 som inneholder relevant informasjon om hvordan anonymisering bør gjennomføres for å fjerne faren for reidentifisering: <a href=\"https://www.datatilsynet.no/globalassets/global/dokumenter-pdfer-skjema-ol/regelverk/veiledere/anonymisering-veileder-041115.pdf\">anonymisering-veileder-041115.pdf (datatilsynet.no)</a></li></ol>",
+          "details": "<b>Eksempler</b><br>Typiske personopplysninger er navn, adresse, telefonnummer, e-post og fødselsnummer. Et bilde regnes som en personopplysning dersom personer kan gjenkjennes, og lydopptak kan være personopplysninger selv om ingen navn blir nevnt i innspillingen. Biometri slik som fingeravtrykk, irismønster, hodeform (for ansiktsgjenkjenning) er også personopplysninger.<br><br>Du kan lese mer om personopplysninger <a href=\"https://www.datatilsynet.no/rettigheter-og-plikter/personopplysninger/\">her</a>.<br><br><br><b>Tips</b><br>Gjør en vurdering om dataene kan deles uten personopplysninger.<ol><li>Dersom du kan dele dataene uten å dele personopplysningene, vil ikke personvernforordningens krav knyttet til behandling av personopplysninger regulere delingen.</li><li>Vurder om det er mulig å anonymisere personopplysningene i datasettet. Opplysningene må ikke kunne reidentifiseres, altså brukes på en måte som gjør det mulig å identifisere personopplysninger igjen. Les mer på Datatilsynets informasjonssider om anonymisering, samt i deres veileder fra 2015 som inneholder relevant informasjon om hvordan anonymisering bør gjennomføres for å fjerne faren for reidentifisering: <a href=\"https://www.datatilsynet.no/globalassets/global/dokumenter-pdfer-skjema-ol/regelverk/veiledere/anonymisering-veileder-041115.pdf\">anonymisering-veileder-041115.pdf (datatilsynet.no)</a></li></ol>",
           "options": [
             {
               "id": "personal.data.no",
               "type": "Answer",
               "heading": "Nei, dataene inneholder ikke personopplysninger",
-              "value": "nei"
+              "value": "no"
             },
             {
               "id": "personal.data.yes",
               "type": "Answer",
               "heading": "Ja, dataene kan direkte, indirekte, eller sammenstilt med andre opplysninger bidra til å entydig identifisere en fysisk person",
-              "value": "ja"
+              "value": "yes"
             }
           ]
         },
@@ -39,7 +39,7 @@
               "test": {
                 "field": "personal.data",
                 "operator": "eq",
-                "value": "ja"
+                "value": "yes"
               },
               "children": [
                 {
@@ -47,7 +47,7 @@
                   "property": "sharing.basis",
                   "type": "Radio",
                   "heading": "Har du et av følgende grunnlag for å dele personopplysninger?",
-                  "text": "All behandling av personopplysninger må ha et rettslig grunnlag for å være lov. Virksomheten må derfor ha identifisert om det finnes et <a href=\"https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/behandlingsgrunnlag/veileder-om-behandlingsgrunnlag/\">behandlingsgrunnlag</a> før opplysningene kan deles. Hvis dette ikke finnes, er delingen av personopplysningene ulovlig.<br><br>Det må finnes et behandlingsgrunnlag for delingen av hver enkelt personopplysning, til hvert enkelt formål. Dersom flere behandlingsgrunnlag kan passe, må virksomheten bestemme seg for ett grunnlag per formål.<br><br>Virksomheten har plikt til å informere den personopplysningene angår om på hvilket grunnlag personopplysningene deres behandles. Dette gjøres vanligvis i en personvernerklæring.<br><br>Personopplysninger er «enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»)<br><br>Har du et av følgende grunnlag for å dele data som inneholder personopplysninger?",
+                  "text": "All behandling av personopplysninger må ha et rettslig grunnlag for å være lov. Virksomheten må derfor ha identifisert om det finnes et behandlingsgrunnlag før opplysningene kan deles. Hvis dette ikke finnes, er delingen av personopplysningene ulovlig.<br><br>Personopplysninger er «enhver opplysning om en identifisert eller identifiserbar fysisk person («den registrerte»)<br><br>Har du spørsmål rundt behandlingsgrunnlag og formål se: <a href=\"https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/behandlingsgrunnlag/veileder-om-behandlingsgrunnlag/\">Behandlingsgrunnlag | Datatilsynet</a><br><br>Har du et av følgende grunnlag for å dele data som inneholder personopplysninger?",
                   "options": [
                     {
                       "id": "sharing.basis.consent",
@@ -122,7 +122,7 @@
                       "id": "sharing.basis.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Det må finnes et behandlingsgrunnlag for behandling av hver enkelt personopplysning til hvert enkelt formål. Dersom du ikke har et behandlingsgrunnlag, anbefaler vi deg å:<ol><li>Ta kontakt med den personopplysningene angår for å innhente samtykke.</li><li>Vurdere hvorvidt delingen er nødvendig for å ivareta legitime interesser etter en interesseavveining.</li><li>Vurdere hvorvidt du kan dele dataene uten å dele personopplysninger.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Det må finnes et behandlingsgrunnlag for behandling av hver enkelt personopplysning til hvert enkelt formål. Dersom du ikke har et behandlingsgrunnlag, anbefaler vi deg å:<ol><li>Ta kontakt med den personopplysningene angår for å innhente samtykke.</li><li>Vurdere hvorvidt delingen er nødvendig for å ivareta legitime interesser etter en interesseavveining.</li><li>Vurdere hvorvidt du kan dele dataene uten å dele personopplysninger.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger</li><li>Kontakt oss i <a href=\"https://datafabrikken.norge.no/datalandsbyen/9/juss-og-data\">Datalandsbyen</a> for ytterligere veiledning.</li></ol>"
                     }
                   ]
                 }
@@ -185,8 +185,8 @@
                   "id": "sensitive.sharing",
                   "property": "sensitive.sharing",
                   "type": "Radio",
-                  "heading": "Har du et eller flere av følgende sekundærgrunnlag som kreves for å dele sensitive personopplysningene",
-                  "text": "All behandling av personopplysninger må ha et rettslig grunnlag for å være lov. Virksomheten må derfor ha identifisert om det finnes et behandlingsgrunnlag før opplysningene kan deles. Dersom det er tale om å dele særlige kategorier av personopplysninger, herunder sensitive, kreves i tillegg et ytterligere rettslig grunnlag. Hvis ikke det finnes, er delingen av de sensitive personopplysningene ulovlig.",
+                  "heading": "Har du et eller flere av følgende sekundærgrunnlag som kreves for å dele sensitive personopplysningene?",
+                  "text": "All behandling av personopplysninger må ha et rettslig grunnlag for å være lov. Virksomheten må derfor ha identifisert om det finnes et behandlingsgrunnlag før opplysningene kan deles. Dersom det er tale om å dele særlige kategorier av personopplysninger, herunder sensitive, kreves i tillegg et ytterligere rettslig grunnlag. Hvis ikke det finnes, er delingen av de sensitive personopplysningene ulovlig.<br><br>Har du et av følgende grunnlag for å dele data som inneholder sensitive personopplysninger?",
                   "options": [
                     {
                       "id": "sensitive.sharing.1",
@@ -198,64 +198,64 @@
                     {
                       "id": "sensitive.sharing.2",
                       "type": "Answer",
-                      "heading": "Nødvendig for at den behandlingsansvarlige eller den registrerte skal kunne oppfylle sine forpliktelser og utøve sine særlige rettigheter",
-                      "text": "på området arbeidsrett, trygderett og sosialrett i den grad dette er tillatt i henhold til unionsretten eller medlemsstatenes nasjonale rett, eller en tariffavtale i henhold til medlemsstatenes nasjonale rett som gir nødvendige garantier for den registrertes grunnleggende rettigheter og interesser.",
+                      "heading": "Det er nødvendig for at den behandlingsansvarlige eller den registrerte skal kunne oppfylle sine forpliktelser og utøve sine særlige rettigheter at de sensitive personopplysningene i dataene deles",
+                      "text": "Disse forpliktelsene eller rettighetene må være på området arbeidsrett, trygderett og sosialrett i den grad dette er tillatt i henhold til unionsretten eller medlemsstatenes nasjonale rett, eller en tariffavtale i henhold til medlemsstatenes nasjonale rett som gir nødvendige garantier for den registrertes grunnleggende rettigheter og interesser.",
                       "value": "2"
                     },
                     {
                       "id": "sensitive.sharing.3",
                       "type": "Answer",
-                      "heading": "Nødvendig for å verne den registrertes eller en annen persons vitale interesser",
-                      "text": "hvis den registrerte ikke er i stand til å gi samtykke fysisk eller juridisk.",
+                      "heading": "Det er nødvendig for å verne den registrertes eller en annen persons vitale interesser at de sensitive personopplysningene i dataene deles",
+                      "text": "Dette alternativet krever at den registrerte ikke er i stand til å gi samtykke fysisk eller juridisk.",
                       "value": "3"
                     },
                     {
                       "id": "sensitive.sharing.4",
                       "type": "Answer",
-                      "heading": "Behandlingen utføres av en stiftelse, sammenslutning eller ideelt organ som har mål av politisk, religiøs eller fagforeningsmessig art",
-                      "text": "så lenge det er snakk om personopplysninger om medlemmer og liknende, det foreligger nødvendige garantier og opplysningene ikke utleveres uten samtykke.",
+                      "heading": "Behandlingen (delingen av dataene) utføres av en stiftelse, sammenslutning eller ideelt organ som har mål av politisk, religiøs eller fagforeningsmessig art",
+                      "text": "Dette alternativet kan kun benyttes så lenge det er snakk om personopplysninger om medlemmer og liknende, det foreligger nødvendige garantier og opplysningene ikke utleveres uten samtykke.",
                       "value": "4"
                     },
                     {
                       "id": "sensitive.sharing.5",
                       "type": "Answer",
-                      "heading": "Behandlingen gjelder personopplysninger som det er åpenbart at den registrerte har offentliggjort. ",
+                      "heading": "Behandlingen (delingen av dataene) gjelder personopplysninger som det er åpenbart at den registrerte har offentliggjort.",
                       "text": " ",
                       "value": "5"
                     },
                     {
                       "id": "sensitive.sharing.6",
                       "type": "Answer",
-                      "heading": "Nødvendig i forbindelse med rettskrav eller domstolene handler innenfor rammen av sin domsmyndighet.",
+                      "heading": "Det er nødvendig i forbindelse med rettskrav eller domstolene handler innenfor rammen av sin domsmyndighet at dataene deles.",
                       "text": " ",
                       "value": "6"
                     },
                     {
                       "id": "sensitive.sharing.7",
                       "type": "Answer",
-                      "heading": "Nødvendig av hensyn til viktige allmenne interesser som har hjemmel i lov",
-                      "text": "Og som står i et rimelig forhold til det mål som søkes oppnådd, være forenlig med det grunnleggende innholdet i retten til vern av personopplysninger og sikre egnede og særlige tiltak for å verne den registrertes grunnleggende rettigheter og interesser.",
+                      "heading": "Det er nødvendig av hensyn til viktige allmenne interesser at dataene deles",
+                      "text": "Det kreves at de allmenne interessene som hevdes har hjemmel i lov og står i et rimelig forhold til det mål som søkes oppnådd, samt er forenlig med det grunnleggende innholdet i retten til vern av personopplysninger og at det sikres egnede og særlige tiltak for å verne den registrertes grunnleggende rettigheter og interesser.",
                       "value": "7"
                     },
                     {
                       "id": "sensitive.sharing.8",
                       "type": "Answer",
-                      "heading": "Nødvendig i forbindelse med forebyggende medisin, medisin i arbeidslivet, vurdering av en arbeidstakers arbeidskapasitet, medisinsk diagnostikk, ytelse av helse- eller sosialtjenester, sosialfaglig eller medisinsk behandling eller forvaltning av helse- eller sosialtjenester og -systemer.",
-                      "text": "Dette gjelder imidlertid bare dersom opplysningene behandles av en fagperson underlagt taushetsplikt, og behandlingen av personopplysninger må ha hjemmel i lov eller følge av avtale med helsepersonell.",
+                      "heading": "Det er nødvendig i forbindelse med forebyggende medisin at dataene deles",
+                      "text": "Dette alternativet vil kunne benyttes ved forebyggende medisin, medisin i arbeidslivet, vurdering av en arbeidstakers arbeidskapasitet, medisinsk diagnostikk, ytelse av helse- eller sosialtjenester, sosialfaglig eller medisinsk behandling eller forvaltning av helse- eller sosialtjenester og -systemer.<br>Dette gjelder imidlertid bare dersom opplysningene behandles av en fagperson underlagt taushetsplikt, og behandlingen av personopplysninger må ha hjemmel i lov eller følge av avtale med helsepersonell.",
                       "value": "8"
                     },
                     {
                       "id": "sensitive.sharing.9",
                       "type": "Answer",
-                      "heading": "Nødvendig av allmenne folkehelsehensyn",
-                      "text": "f.eks. vern mot alvorlige grenseoverskridende helsetrusler eller for å sikre høye kvalitets- og sikkerhetsstandarder for helsetjenester og legemidler eller medisinsk utstyr, på grunnlag av unionsretten eller medlemsstatenes nasjonale rett der det fastsettes egnede og særlige tiltak for å verne den registrertes rettigheter og friheter, særlig taushetsplikt.",
+                      "heading": "Det er nødvendig av allmenne folkehelsehensyn at dataene deles",
+                      "text": "Dette alternativet kan f.eks. anvendes for vern mot alvorlige grenseoverskridende helsetrusler eller for å sikre høye kvalitets- og sikkerhetsstandarder for helsetjenester og legemidler eller medisinsk utstyr, på grunnlag av unionsretten eller medlemsstatenes nasjonale rett der det fastsettes egnede og særlige tiltak for å verne den registrertes rettigheter og friheter, særlig taushetsplikt.",
                       "value": "9"
                     },
                     {
                       "id": "sensitive.sharing.10",
                       "type": "Answer",
-                      "heading": "Nødvendig for arkivformål i allmennhetens interesse",
-                      "text": "for formål knyttet til vitenskapelig eller historisk forskning eller for statistiske formål i samsvar med artikkel 89 nr. 1 på grunnlag av unionsretten eller medlemsstatenes nasjonale rett som skal stå i et rimelig forhold til det mål som søkes oppnådd, være forenlig med det grunnleggende innholdet i retten til vern av personopplysninger og sikre egnede og særlige tiltak for å verne den registrertes grunnleggende rettigheter og interesser.",
+                      "heading": "Det er nødvendig for arkivformål i allmennhetens interesse for formål knyttet til vitenskapelig eller historisk forskning eller for statistiske formål at dataene deles",
+                      "text": "Dette alternativet må benyttes i samsvar med personvernforordningens artikkel 89 nr. 1 på grunnlag av unionsretten eller medlemsstatenes nasjonale rett som skal stå i et rimelig forhold til det mål som søkes oppnådd, samt være forenlig med det grunnleggende innholdet i retten til vern av personopplysninger og sikre egnede og særlige tiltak for å verne den registrertes grunnleggende rettigheter og interesser.",
                       "value": "10"
                     },
                     {
@@ -289,7 +289,7 @@
                       "id": "sensitive.sharing.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Det må finnes et sekundært behandlingsgrunnlag for deling av hver enkelt personopplysning til hvert enkelt formål. Dersom du ikke har et sekundært behandlingsgrunnlag, anbefaler vi deg å:<ol><li>Ta kontakt med den personopplysningene angår for å innhente et uttrykkelig samtykke.</li><li>Vurdere hvorvidt du kan dele dataene uten å dele personopplysninger.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Det må finnes et sekundært behandlingsgrunnlag for deling av hver enkelt personopplysning til hvert enkelt formål. Dersom du ikke har et sekundært behandlingsgrunnlag, anbefaler vi deg å:<ol><li>Ta kontakt med den personopplysningene angår for å innhente et uttrykkelig samtykke.</li><li>Vurdere hvorvidt du kan dele dataene uten å dele personopplysninger.</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personoppplysninger</li><li>Kontakt oss i <a href=\"https://datafabrikken.norge.no/datalandsbyen/9/juss-og-data\">Datalandsbyen</a> for ytterligere veiledning.</li></ol>"
                     }
                   ]
                 }
@@ -303,41 +303,77 @@
       "id": "confidentiality",
       "type": "Page",
       "heading": "Taushetsplikt",
-      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder taushetsbelagt informasjon vil du i utgangspunktet være avskåret fra å dele dataene.<br><br>Taushetsplikt kan følge av lov, instruks eller avtale. Hvilke opplysninger som er omfattet av taushetsplikt, vil bero på den nærmere bestemmelse eller avtale som fastsetter taushetsplikt.",
+      "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder taushetsbelagt informasjon vil du i utgangspunktet være forhindret fra å dele dataene.<br><br>Personer som gjennom sitt arbeid eller sin stilling får kunnskap om andres personlige, økonomiske eller forretningsmessige forhold, har etter norsk rett som regel taushetsplikt.",
       "children": [
         {
-          "id": "confidentiality.question",
-          "property": "confidentiality.question",
+          "id": "confidentiality.performs",
+          "property": "confidentiality.performs",
           "type": "Radio",
-          "heading": "Er dataene du ønsker å dele underlagt taushetsplikt?",
+          "heading": "Er dataene som ønskes delt, innhentet av en som utfører tjeneste eller arbeid for et forvaltningsorgan i forbindelse med dette arbeidet/tjenesten?",
           "options": [
             {
-              "id": "confidentiality.personal",
+              "id": "confidentiality.performs.yes",
               "type": "Answer",
-              "heading": "Taushetsplikt om noens personlige forhold",
-              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om noens personlige forhold er taushetsbelagt.",
-              "value": "personal"
+              "heading": "Ja",
+              "value": "yes"
             },
             {
-              "id": "confidentiality.technical",
+              "id": "confidentiality.performs.no",
               "type": "Answer",
-              "heading": "Taushetsplikt om forretningsmessige forhold",
-              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår.",
-              "value": "technical"
-            },
+              "heading": "Nei",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "type": "Branch",
+          "branches": [
             {
-              "id": "confidentiality.duty",
-              "type": "Answer",
-              "heading": "Taushetsplikt etter sektorlovgivning",
-              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for en yrkesgruppe som er underlagt taushetsplikt i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.",
-              "value": "duty"
-            },
-            {
-              "id": "confidentiality.none",
-              "type": "Answer",
-              "heading": "Ingen av alternativene gjelder",
-              "text": " ",
-              "value": "none"
+              "test": {
+                "field": "confidentiality.performs",
+                "operator": "eq",
+                "value": "yes"
+              },
+              "children": [
+                {
+                  "id": "confidentiality.question",
+                  "property": "confidentiality.question",
+                  "type": "Radio",
+                  "heading": "Inneholder dataene informasjon om ett av følgende forhold",
+                  "summary": "Mer informasjon om taushetsplikten",
+                  "details": "Som personlige forhold regnes ikke fødested, fødselsdato og personnummer, statsborgerforhold, sivilstand, yrke, bopel og arbeidssted, med mindre slike opplysninger røper et klientforhold eller andre forhold som må anses som personlige. Det kan være regulert nærmere i forskrift om hvilke opplysninger som skal regnes som personlige, om hvilke organer som kan gi privatpersoner opplysninger som nevnt i punktumet foran og opplysninger om den enkeltes personlige status for øvrig, samt om vilkårene for å gi slike opplysninger.",
+                  "options": [
+                    {
+                      "id": "confidentiality.personal",
+                      "type": "Answer",
+                      "heading": "Dataene inneholder informasjon om noens personlige forhold",
+                      "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om noens personlige forhold er taushetsbelagt.",
+                      "value": "personal"
+                    },
+                    {
+                      "id": "confidentiality.technical",
+                      "type": "Answer",
+                      "heading": "Dataene inneholder informasjon om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår",
+                      "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår.",
+                      "value": "technical"
+                    },
+                    {
+                      "id": "confidentiality.duty",
+                      "type": "Answer",
+                      "heading": "Dataene inneholder informasjon om forhold som er omfattet av taushetsplikten i en lov som regulerer sektoren",
+                      "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for en yrkesgruppe som er underlagt taushetsplikt i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.",
+                      "value": "duty"
+                    },
+                    {
+                      "id": "confidentiality.none",
+                      "type": "Answer",
+                      "heading": "Ingen av alternativene gjelder",
+                      "text": " ",
+                      "value": "none"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -359,7 +395,7 @@
                       "id": "confidentiality.question.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som de personlige forholdene angår.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som de personlige forholdene angår.</li><li>Kontakt oss i <a href=\"https://datafabrikken.norge.no/datalandsbyen/9/juss-og-data\">Datalandsbyen</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
                     }
                   ]
                 }
@@ -380,7 +416,7 @@
                       "id": "confidentiality.question.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som er rettighetshaver av informasjonen knyttet til de forretningsmessige forholdene som er underlagt taushetsplikt.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>"
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i forvaltningsloven § 13. Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se nærmere på den aktuelle lovhjemmelen der taushetsplikten er forankret, for å se om den inneholder et unntak som opphever taushetsplikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Innhente samtykke fra den/de som er rettighetshaver av informasjonen knyttet til de forretningsmessige forholdene som er underlagt taushetsplikt.</li><li>Kontakt oss i <a href=\"https://datafabrikken.norge.no/datalandsbyen/9/juss-og-data\">Datalandsbyen</a> for ytterligere veiledning.</li></ul>"
                     }
                   ]
                 }
@@ -401,7 +437,7 @@
                       "id": "confidentiality.question.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.<br><br>Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se om lovhjemmelen som hjemler taushetsplikten inneholder et unntak som opphever plikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Ta kontakt <a href=\"https://datafabrikken.norge.no/datalandsbyen\">her</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
+                      "text": "Dataene du ønsker å dele er omfattet av taushetsplikten i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.<br><br>Dette betyr at dataene ikke kan deles. Dersom du fremdeles ønsker å dele dataene bør du enten:<ul><li>Se om lovhjemmelen som hjemler taushetsplikten inneholder et unntak som opphever plikten.</li><li>Begrense delingen til de datasettene som ikke inneholder taushetsbelagte opplysninger.</li><li>Kontakt oss i <a href=\"https://datafabrikken.norge.no/datalandsbyen/9/juss-og-data\">Datalandsbyen</a> for ytterligere veiledning.</li></ul>Opplysninger som er unntatt taushetsplikt vil ofte kunne defineres som personopplysninger. Du bør derfor forsikre deg om at datasettene det er tale om allikevel ikke inneholder personopplysninger."
                     }
                   ]
                 }
@@ -455,7 +491,7 @@
                       "id": "contractuallaw.sign.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene kan ikke deles, ettersom de er omfattet av en klausul i en avtale om begrenser delingen.<br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Vurdere om det er enkelte data som faller utenom avtalen, og kun dele disse.</li><li>Reforhandle avtalen som begrenser delingen av de aktuelle dataene eller inngå en ny avtale som opphever disse begrensningene.</li></ol>"
                     }
                   ]
                 }
@@ -469,6 +505,7 @@
       "id": "intangible",
       "type": "Page",
       "heading": "Immaterielle begrensninger",
+      "lead": "Når data forstås som «informasjon» i vid betydning, er utgangspunktet i norsk rett, at ingen kan eie informasjon eller kunnskap. Åndsverkloven og lov om vern av forretningshemmeligheter oppstiller imidlertid plikter og rettigheter som etter omstendighetene kan få betydning for deling, bruk av data, kreditering og hemmelighold av data m.m. Det er også adgang til å inngå avtaler på enkelte områder som regulerer datadeling. Eksempler på slike avtaler kan være lisenser, terms of use avtaler og taushetsavtaler.<br><br>Dersom det er dine egne data som skal deles må du forsikre deg om at du gjør dette på en måte som understøtter formålet ditt med delingen. Dette betyr at du må sørge for at du bruker riktig lisens, eventuelt utfylt med en terms of use avtale.<br><br>Dersom det er andres data som skal deles må du sørge for at den ønskede delingen er tillatt under den lisensen eller terms of use avtalen som dataene er knyttet opp mot, eller at dataene eller informasjonen i dataene utgjør en forretningshemmelighet.",
       "children": [
         {
           "id": "intangible.license",
@@ -528,7 +565,7 @@
                       "id": "intangible.license.nlod.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Samlinger av data kan utgjøre en database. Dersom vilkårene i åndsverkloven § 24 er oppfylt, kan den som har fremstilt databasen, få en enerett til å råde over hele eller vesentlige deler av databasens innhold.<br><br>Lovens vilkår er at innsamling, kontroll eller presentasjon av innholdet i databasen innebærer en “vesentlig investering”. Eneretten innebærer en rett til å forby andre å kopiere eller å gjøre databasen tilgjengelig for allmennheten så fremt det gjelder hele eller vesentlige deler av databasen. Eneretten gir også vern mot gjentatt og systematisk utnytting av uvesentlige deler av databasen, dersom dette skader den normale bruken av databasen eller urimelig tilsidesetter fremstillerens legitime interesser.<br><br>Dersom dataene som ønskes delt er omfattet av databasevernet, er en datakonsumment forhindret fra å utnytte databasen i strid med datatilbyderens enerett, med mindre dataene er merket med en lisens som gjør unntak fra databasevernet<br><br>NLOD lisensen gjør ikke unntak fra databasevernet. Dette betyr at du ikke kan dele dataene dersom de oppfyller lovens vilkår er omfattet av databasevernet, med mindre du har samtykke fra opphaveren.<br><br>Dersom det er dine egne datasett som ønskes delt, anbefaler vi deg å heller benytte Creative Commons lisensene CC0 og CC by 4.0. Ettersom disse lisensene gjør unntak fra databasevernet og åpner opp for mer utstrakt deling av data."
+                      "text": "NLOD lisensen gjør ikke unntak fra databasevernet. Dette betyr at du ikke kan dele dataene dersom de er omfattet av databasevernet, med mindre du har samtykke fra opphavsmannen.<br><br>Dersom det er tale om dine egne data kan disse deles fra deg til en annen aktør, da det foreligger samtykke. Dersom dataene opprinnelig tilhører noen andre, må du ha samtykke for at dataene skal kunne deles dersom de er omfattet av databasevernet.<br><br><b>Hva er databasevernet og når gjelder det?</b><br>Samlinger av data kan utgjøre en database. Dersom vilkårene i åndsverkloven § 24 er oppfylt, kan den som har fremstilt databasen, få en enerett til å råde over hele eller vesentlige deler av databasens innhold.<br><br>Lovens vilkår er at innsamling, kontroll eller presentasjon av innholdet i databasen innebærer en “vesentlig investering”. Eneretten innebærer en rett til å forby andre å kopiere eller å gjøre databasen tilgjengelig for allmennheten så fremt det gjelder hele eller vesentlige deler av databasen. Eneretten gir også vern mot gjentatt og systematisk utnytting av uvesentlige deler av databasen, dersom dette skader den normale bruken av databasen eller urimelig tilsidesetter fremstillerens legitime interesser.<br><br>Dersom dataene som ønskes delt er omfattet av databasevernet, er en datakonsumment forhindret fra å utnytte databasen i strid med datatilbyderens enerett, med mindre dataene er merket med en lisens som gjør unntak fra databasevernet"
                     }
                   ]
                 }
@@ -549,7 +586,7 @@
                       "id": "intangible.license.other.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Basert på ditt svar kan vi ikke svare på hvilke forpliktelser som følger bruken av de aktuelle dataene. Vi anbefaler deg å lese lisensvilkårene nøye og blant annet hvilke rettigheter/plikter du har med tanke på kopiering, bruk, tilgjengeliggjøring, kreditering etc."
+                      "text": "Basert på ditt svar kan vi ikke svare på hvilke forpliktelser som følger bruken av de aktuelle dataene. Vi anbefaler deg å lese lisensvilkårene nøye og blant annet hvilke rettigheter/plikter du har med tanke på kopiering, bruk, tilgjengeliggjøring, kreditering, databasevern etc."
                     }
                   ]
                 }
@@ -618,7 +655,7 @@
                       "id": "intangible.terms.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Dataene kan ikke deles, dersom de er omfattet av en klausul i en avtale som begrenser den aktuelle delingen.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Begrense delingen til de datasettene som ikke inneholder personopplysninger eller...</li><li>Vurder om personopplysningene i datasettene kan anonymiseres uten fare for reidentifisering, slik at de aktuelle datasettene ikke lenger inneholder personopplysninger.</li><li>Reforhandle avtalen som begrenser den konkrete delingen eller inngå en ny avtale som opphever disse begrensningene.</li><li>Ta kontakt her for ytterligere veiledning.</li></ol>"
+                      "text": "Dataene kan ikke deles, ettersom de er omfattet en avtale om begrenser delingen.<br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Vurdere om det er enkelte data som faller utenom avtalen, og kun dele disse.</li><li>Reforhandle avtalen som begrenser delingen av de aktuelle dataene eller inngå en ny avtale som opphever disse begrensningene.</li></ol>"
                     }
                   ]
                 }
@@ -751,13 +788,15 @@
     {
       "id": "protection",
       "type": "Page",
-      "heading": "Skjermingsverdige verdier etter sikkerhetslover",
+      "heading": "Begrensninger etter sikkerhetsloven",
       "children": [
         {
           "id": "protection.damage",
           "property": "protection.damage",
           "type": "Radio",
           "heading": "Kan det skade nasjonale sikkerhetsinteresser at informasjonen blir kjent for uvedkommende, går tapt, blir endret eller blir utilgjengelig?",
+          "summary": "Informasjon",
+          "details": "Sikkerhetsloven stiller krav om at virksomheten skal sørge for et forsvarlig sikkerhetsnivå for skjermingsverdige verdier. Dette innebærer å beskytte verdiene mot tilsiktede handlinger som direkte eller indirekte kan føre til konsekvenser for grunnleggende nasjonale funksjoner og nasjonale sikkerhetsinteresser, og sørge for at skjermingsverdig informasjonen ikke blir kjent for uvedkommende, går tapt, blir endret, eller blir utilgjengelig. For å oppnå et forsvarlig sikkerhetsnivå stiller sikkerhetsloven krav til sikkerhetsstyring. Se mer på <a href=\"https://nsm.no/fagomrader/sikkerhetsstyring/\">Sikkerhetsstyring - Nasjonal sikkerhetsmyndighet (nsm.no)</a>.<br><br>Begrepet nasjonale sikkerhetsinteresser er i sikkerhetsloven § 1-5 nr. 1, definert som: landets suverenitet, territorielle integritet og demokratiske styreform og overordnede sikkerhetspolitiske interesser knyttet til:<ol type=\"a\"><li>de øverste statsorganers virksomhet, sikkerhet og handlefrihet</li><li>forsvar, sikkerhet og beredskap</li><li>forholdet til andre stater og internasjonale organisasjoner</li><li>økonomisk stabilitet og handlefrihet</li><li>samfunnets grunnleggende funksjonalitet og befolkningens grunnleggende sikkerhet</li></ol>",
           "options": [
             {
               "id": "protection.damage.yes",
@@ -791,7 +830,7 @@
                       "id": "protection.damage.error.msg",
                       "type": "Text",
                       "warning": true,
-                      "text": "Sikkerhetsloven stiller krav om at virksomheten skal sørge for et forsvarlig sikkerhetsnivå for skjermingsverdige verdier. Dette innebærer å beskytte verdiene mot tilsiktede handlinger som direkte eller indirekte kan føre til konsekvenser for grunnleggende nasjonale funksjoner og nasjonale sikkerhetsinteresser, og sørge for at skjermingsverdig informasjonen ikke blir kjent for uvedkommende, går tapt, blir endret, eller blir utilgjengelig. For å oppnå et forsvarlig sikkerhetsnivå stiller sikkerhetsloven krav til sikkerhetsstyring. Se mer på <a href=\"https://nsm.no/fagomrader/sikkerhetsstyring/\">Sikkerhetsstyring - Nasjonal sikkerhetsmyndighet (nsm.no)</a>."
+                      "text": "Du kan i utgangspunktet ikke dele de aktuelle dataene fritt dersom inneholder skjermingsverdige verdier etter sikkerhetsloven.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Vurdere om det er mulig å begrense delingen til de datasettene som ikke er eller inneholder informasjon som kan skade de nasjonale sikkerhetsinteressene.</li><li>Kontakte <a href=\"https://nsm.no/om-oss/kontakt-oss/\">Nasjonal Sikkerhetsmyndighet (NSM)</a> for å få veiledning i hvorvidt informasjonen kan deles i begrenset omfang eller dersom den sikkerhetsgraderes.</li></ol>"
                     }
                   ]
                 }
@@ -1052,18 +1091,17 @@
     {
       "id": "hooray",
       "type": "Result",
-      "exporter": "dataExport",
       "heading": {
-        "complete": "Hurra - du kan dele dataene dine!",
-        "completeWithError": "Beklager - du kan ikke dele data",
-        "incomplete": "Beklager - du har ikke svart på alt",
-        "incompleteWithError": "Beklager - du har ikke svart på alt"
+        "complete": "Dataene kan deles",
+        "completeWithError": "Dataene kan ikke deles",
+        "incomplete": "Du har ikke svart på alt",
+        "incompleteWithError": "Du har ikke svart på alt"
       },
       "lead": {
-        "complete": "Les nøye gjennom svarene dine, og sjekk at alt stemmer før du deler dataene dine",
-        "completeWithError": "Du kan ikke dele data :( Se feilene dine under.",
-        "incomplete": "Vi kan ikke gi deg et råd med mindre du svarer på alle spørsmålene.",
-        "incompleteWithError": "Du kan ikke dele data :( Se feil og manglende svar under."
+        "complete": "Dersom du har gitt riktige opplysninger kan disse dataene deles, men sjekk at alt stemmer.",
+        "completeWithError": "Dersom du har gitt riktige opplysninger kan disse dataene ikke deles, men sjekk at alt stemmer.",
+        "incomplete": "For at vi skal kunne gi deg riktig veiledning må du fylle ut hele skjemaet",
+        "incompleteWithError": "For at vi skal kunne gi deg riktig veiledning må du fylle ut hele skjemaet"
       }
     }
   ]
