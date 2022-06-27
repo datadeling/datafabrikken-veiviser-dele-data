@@ -21,7 +21,7 @@ function Intro({ close, data }) {
         <Primitives.Wizard>
             <IntroMain>
                 <Primitives.Heading.H1>Kan du dele datasettet?</Primitives.Heading.H1>
-                <Primitives.Paragraphs.Lead>Ønsker du å dele data, men er usikker på om du har lov til å dele data? Gå gjennom veiviseren for å finne ut av om du lovlig kan dele, eller om det er noe mer du må gjøre eller finne ut av først.</Primitives.Paragraphs.Lead>
+                <Primitives.Paragraphs.Lead>Ønsker du å dele data, men er usikker på om du har lov til å dele data? Gå gjennom veilederen for å finne ut av om du lovlig kan dele, eller om det er noe mer du må gjøre eller finne ut av først.</Primitives.Paragraphs.Lead>
                 <Primitives.Paragraphs.P>
                 Svarene kan du ta vare på slik at du kan huske hva du må finne ut av og kan dokumentere vurderingene du har foretatt. Hvis du har behov for å finne ut av ting kan du komme tilbake for å fortsette veilederen senere.
                 </Primitives.Paragraphs.P>
@@ -42,7 +42,7 @@ function Intro({ close, data }) {
                     <li>Hvilke regelverk som regulerer delingen du har lyst til å gjøre</li>
                     <li>Hvordan du kan gå frem for å dele data i samsvar med gjeldene lovverk</li>
                 </ul>
-                <Primitives.Paragraphs.P>Dette kan hjelpe deg å svare riktig i veiviseren. </Primitives.Paragraphs.P>
+                <Primitives.Paragraphs.P>Dette kan hjelpe deg å svare riktig i veilederen. </Primitives.Paragraphs.P>
                 <br />
                 <Primitives.Heading.H2>Start nå og fullfør senere</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
@@ -50,7 +50,7 @@ function Intro({ close, data }) {
                 </Primitives.Paragraphs.P>
                 <br />
                 <Primitives.Button.MainButton type="button" onClick={() => close()}>
-                  Start veiviseren
+                  Start veilederen
                 </Primitives.Button.MainButton>
             </IntroMain>
         </Primitives.Wizard>
