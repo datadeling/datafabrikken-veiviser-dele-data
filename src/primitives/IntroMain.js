@@ -12,7 +12,7 @@ export const IntroMain = styled.main`
     line-height: 1.2;
     margin-bottom: 30px;
     &::before {
-      content: "Veiviser";
+      content: "Veileder";
       display: block;
       color: gray;
       text-transform: uppercase;
