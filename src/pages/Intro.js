@@ -41,8 +41,8 @@ function Intro({ close, data }) {
                 Det er lurt å finne fram til dokumentasjon som inneholder informasjon om dataene du ønsker å dele. Dette er typisk:
                 </Primitives.Paragraphs.P>
                 <ul>
-                    <li><a href="https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/informasjonssikkerhet-internkontroll/etablere-internkontroll/">Internkontroll</a> for virksomhetens behandling av personopplysninger</li>
-                    <li><a href="https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/protokoll-over-behandlingsaktiviteter/">Behandlingsprotokoll</a></li>
+                    <li><a href="https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/informasjonssikkerhet-internkontroll/etablere-internkontroll/" target="_blank" rel="noopener noreferrer">Internkontroll</a> for virksomhetens behandling av personopplysninger</li>
+                    <li><a href="https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/protokoll-over-behandlingsaktiviteter/" target="_blank" rel="noopener noreferrer">Behandlingsprotokoll</a></li>
                     <li>Avtaler, lisenser, og annet som regulerer datasettene som ønskes delt</li>
                 </ul>
                 <Primitives.Paragraphs.P>
@@ -70,7 +70,7 @@ function Intro({ close, data }) {
                 </Primitives.Paragraphs.P>
                 <Primitives.Heading.H2>Kontakt oss</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
-                Er det noen spørsmål du er usikker på underveis? Da kan du <a href="https://datalandsbyen.norge.no">stille spørsmål i Datalandsbyen</a> eller <a href="https://datalandsbyen.norge.no/category/9/juss-og-data">ta kontakt med Nasjonalt ressurssenter for deling og bruk av data</a>.
+                Er det noen spørsmål du er usikker på underveis? Da kan du <a href="https://datalandsbyen.norge.no" target="_blank" rel="noopener noreferrer">stille spørsmål i Datalandsbyen</a> eller <a href="https://datalandsbyen.norge.no/category/9/juss-og-data" target="_blank" rel="noopener noreferrer">ta kontakt med Nasjonalt ressurssenter for deling og bruk av data</a>.
                 </Primitives.Paragraphs.P>
                 <br />
                 <Primitives.Button.MainButton type="button" onClick={() => close()}>
