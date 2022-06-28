@@ -52,11 +52,10 @@ export default class App extends Component {
       <Provider store={store}>
         <Root>
           <Wizard wizard={datadeling} styles={styles} exports={{ dataExport }} />
-          <Container width={700}>
+          <Container>
             <InfoBox>
-              <h2>Noe du lurer på?</h2>
+              <h2>Spør i Datalandsbyen dersom det er noe du lurer på.</h2>
               <a href={'https://datalandsbyen.norge.no'} target={'_blank'} rel="noreferrer">Spør i Datalandsbyen &gt;</a>
-              <a href={'https://datalandsbyen.norge.no'} target={'_blank'} rel="noreferrer">Få hjelp fra våre juridiske rådgivere</a>
             </InfoBox>
           </Container>
         </Root>
