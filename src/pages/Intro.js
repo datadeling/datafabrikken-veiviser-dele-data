@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Primitives } from 'losen';
 import { IntroMain } from '../primitives/IntroMain';
+import Alert from '../primitives/Alert'; 
 
 function Intro({ close, data }) {
     const arrayWithData = Object.keys(data);
@@ -19,6 +20,7 @@ function Intro({ close, data }) {
 
     return (
         <Primitives.Wizard>
+            <Alert>TESTVERSJON!</Alert>
             <IntroMain>
                 <Primitives.Heading.H1>Kan du dele datasettet?</Primitives.Heading.H1>
                 <Primitives.Paragraphs.Lead>Ønsker du å dele data, men er usikker på om du har lov til å dele data? Vår Veileder hjelper deg med å finne ut om du lovlig kan dele data, eller hva du eventuelt må endre for å kunne dele.</Primitives.Paragraphs.Lead>
