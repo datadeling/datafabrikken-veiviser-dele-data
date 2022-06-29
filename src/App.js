@@ -9,6 +9,7 @@ import dataExport from './exports/data-export';
 import { InfoBox } from './components/infobox';
 import { Container } from './components/container';
 import { Root } from './components/root';
+import { Alert } from './components/alert';
 
 import Intro from './pages/Intro';
 
@@ -51,6 +52,7 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <Root>
+          <Alert>TESTVERSJON!</Alert>
           <Wizard wizard={datadeling} styles={styles} exports={{ dataExport }} />
           <Container>
             <InfoBox>
