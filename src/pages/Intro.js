@@ -23,7 +23,7 @@ function Intro({ close, data }) {
             <Alert>TESTVERSJON!</Alert>
             <IntroMain>
                 <Primitives.Heading.H1>Kan du dele datasettet?</Primitives.Heading.H1>
-                <Primitives.Paragraphs.Lead>Ønsker du å dele data, men er usikker på om du har lov til å dele data? Vår Veileder hjelper deg med å finne ut om du lovlig kan dele data, eller hva du eventuelt må endre for å kunne dele.</Primitives.Paragraphs.Lead>
+                <Primitives.Paragraphs.Lead>Formålet med denne veilederen er for å teste om denne formen for veiledning gir verdi til brukeren. Dette er således en testversjon.</Primitives.Paragraphs.Lead>
                 <Primitives.Heading.H2>Hva inneholder veilederen</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
                 Veilederen guider deg gjennom noen sentrale juridiske spørsmål du må besvare før du deler data.
@@ -36,7 +36,7 @@ function Intro({ close, data }) {
                 </Primitives.Paragraphs.P>
                 <Primitives.Heading.H2>Start nå og fullfør senere</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
-                Når du er ferdig med Veilederen, kan du laste ned en PDF med resultatene dine. Resultatene gir deg en oversikt over hva du må finne ut av og kan blant annet benyttes som grunnlag for å dokumentere vurderingene som er foretatt. Det er mulig å ta en pause i veilederen ved behov, og komme tilbake for å fortsette senere.
+                Når du er ferdig med Veilederen, kan du laste ned en PDF med svarene dine. Dette kan fungere som et veikart i relevante rettskilder. Det er mulig å ta en pause i veilederen ved behov, og komme tilbake for å fortsette senere.
                 </Primitives.Paragraphs.P>
                 <Primitives.Heading.H2>Før du begynner</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
@@ -72,7 +72,7 @@ function Intro({ close, data }) {
                 </Primitives.Paragraphs.P>
                 <Primitives.Heading.H2>Kontakt oss</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
-                Er det noen spørsmål du er usikker på underveis? Da kan du <a href="https://datalandsbyen.norge.no" target="_blank" rel="noopener noreferrer">stille spørsmål i Datalandsbyen</a> eller <a href="https://datalandsbyen.norge.no/category/9/juss-og-data" target="_blank" rel="noopener noreferrer">ta kontakt med Nasjonalt ressurssenter for deling og bruk av data</a>.
+                Er det noen spørsmål du er usikker på underveis? Da kan du stille spørsmål i <a href="https://datalandsbyen.norge.no/category/9/juss-og-data" target="_blank" rel="noopener noreferrer">Datalandsbyen</a>.
                 </Primitives.Paragraphs.P>
                 <br />
                 <Primitives.Button.MainButton type="button" onClick={() => close()}>
