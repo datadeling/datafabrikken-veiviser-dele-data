@@ -72,7 +72,7 @@ function Intro({ close, data }) {
                 </Primitives.Paragraphs.P>
                 <Primitives.Heading.H2>Kontakt oss</Primitives.Heading.H2>
                 <Primitives.Paragraphs.P>
-                Er det noen spørsmål du er usikker på underveis? Da kan du stille spørsmål i <a href="https://datalandsbyen.norge.no/category/9/juss-og-data" target="_blank" rel="noopener noreferrer">Datalandsbyen</a>.
+                Er det noen spørsmål du er usikker på underveis? Da kan du stille spørsmål i <a href="https://datafabrikken.norge.no/datalandsbyen/9/juss-og-data" target="_blank" rel="noopener noreferrer">Datalandsbyen</a>.
                 </Primitives.Paragraphs.P>
                 <br />
                 <Primitives.Button.MainButton type="button" onClick={() => close()}>
