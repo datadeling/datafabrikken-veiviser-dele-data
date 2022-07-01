@@ -57,7 +57,7 @@ export default class App extends Component {
           <Container>
             <InfoBox>
               <h2>Spør i Datalandsbyen dersom det er noe du lurer på.</h2>
-              <a href={'https://datalandsbyen.norge.no'} target={'_blank'} rel="noreferrer">Spør i Datalandsbyen &gt;</a>
+              <a href={'https://datafabrikken.norge.no/datalandsbyen'} target={'_blank'} rel="noreferrer">Spør i Datalandsbyen &gt;</a>
             </InfoBox>
           </Container>
         </Root>
