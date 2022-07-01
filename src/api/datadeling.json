@@ -1070,7 +1070,7 @@
                                       "id": "illegal.competition.error.msg",
                                       "type": "Text",
                                       "warning": true,
-                                      "text": "Dersom det deles data mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte er det en risiko for at det foreligger et ulovlig samarbeid etter konkurranselovens § 10.<br><br>Vi anbefaler deg å ikke dele data med konsumenten med mindre dette kan gjøres uten formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte."
+                                      "text": "Dersom det deles data mellom uavhengige foretak med formål eller virkning som kan hindre, innskrenke eller vri konkurransen på en merkbar måte er det en risiko for at det foreligger et ulovlig samarbeid etter konkurranselovens § 10 første ledd. Noe som betyr at data ikke kan deles.<br><br>Ikke alle konkurransebegrensende samarbeid er forbudt. Unntaksbestemmelsen i konkurranseloven § 10 tredje ledd gjør unntak fra forbudet i konkurranseloven § 10 første ledd for samarbeid som gir effektivitetsgevinster som oppveier samarbeidets konkurransebegrensende virkninger. Dette kan for eksempel være tilfellet der samarbeidet effektiviserer produksjonen eller distribusjonen på en måte som kommer konsumentene til god i form av lavere priser eller høyere kvalitet.<br><br>Les mer på <a href=\"https://konkurransetilsynet.no/ulovlig-samarbeid/\" target=\"_blank\" rel=\"noopener noreferrer\">Ulovlig samarbeid - § 10 - Konkurransetilsynet</a>"
                                     }
                                   ]
                                 }
@@ -1092,8 +1092,8 @@
       "id": "hooray",
       "type": "Result",
       "heading": {
-        "complete": "Dataene kan deles",
-        "completeWithError": "Dataene kan ikke deles",
+        "complete": "Dataene kan muligens deles",
+        "completeWithError": "Dataene kan sannsynligvis ikke deles",
         "incomplete": "Du har ikke svart på alt",
         "incompleteWithError": "Du har ikke svart på alt"
       },
