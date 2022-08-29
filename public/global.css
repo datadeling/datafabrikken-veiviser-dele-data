@@ -1,3 +1,9 @@
+html, * {
+    font-family: Rubik, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
 :root {
     --color-light: #2d3340;
     --color-dark: #2d3340;

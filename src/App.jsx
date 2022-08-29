@@ -9,7 +9,8 @@ import dataExport from './exports/data-export';
 import { InfoBox } from './components/infobox';
 import { Container } from './components/container';
 import { Root } from './components/root';
-import { Alert } from './components/alert';
+import { Header } from './components/header';
+import HeaderSection from './components/header-section';
 
 import Intro from './pages/Intro';
 
@@ -30,17 +31,14 @@ export default class App extends Component {
     window.scrollTo(0, 0);
   }
 
-  showIntro() {
-    this.setState({ intro: true });
-    // eslint-disable-next-line no-undef
-    window.scrollTo(0, 0);
-  }
-
   render() {
-    if (this.state.intro) {
+    const { state: { intro } } = this;
+    if (intro) {
       return (
         <Provider store={store}>
           <Root>
+            <Header />
+            <HeaderSection />
             <StyleProvider styles={styles}>
               <Intro close={this.closeIntro} />
             </StyleProvider>
@@ -52,12 +50,13 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <Root>
-          <Alert>TESTVERSJON!</Alert>
+          <Header />
+          <HeaderSection />
           <Wizard wizard={datadeling} styles={styles} exports={{ dataExport }} />
           <Container>
             <InfoBox>
               <h2>Spør i Datalandsbyen dersom det er noe du lurer på.</h2>
-              <a href={'https://datafabrikken.norge.no/datalandsbyen'} target={'_blank'} rel="noreferrer">Spør i Datalandsbyen &gt;</a>
+              <a href="https://datafabrikken.norge.no/datalandsbyen" target="_blank" rel="noopener noreferrer">Spør i Datalandsbyen &gt;</a>
             </InfoBox>
           </Container>
         </Root>

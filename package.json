@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "build": "^0.1.4",
     "lodash.get": "^4.4.2",
     "losen": "^4.2.0",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
-    "redux": "^3.7.1",
-    "redux-persist": "^4.9.1",
-    "styled-components": "^2.1.2"
+    "react": "^15.7.0",
+    "react-dom": "^15.7.0",
+    "react-redux": "^5.1.2",
+    "redux": "^4.1.1",
+    "redux-persist": "^4.10.2",
+    "run": "^1.4.0",
+    "styled-components": "^2.4.1"
   },
   "scripts": {
     "start": "PORT=8080 react-scripts start",
@@ -24,12 +27,7 @@
     "validate": "losen validate src/api/datadeling.json"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.2",
-    "eslint-plugin-import": "^2.6.1",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
-    "react-scripts": "^1.0.10"
+    "react-scripts": "^3.4.4"
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -39,5 +37,17 @@
       "react/jsx-filename-extension": 0,
       "react/no-children-prop": 0
     }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

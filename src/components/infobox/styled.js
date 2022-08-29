@@ -38,7 +38,6 @@ const InfoBox = styled.div`
   }
 `;
 
-
 export default {
   InfoBoxContainer,
   InfoBox,
