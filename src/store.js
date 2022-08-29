@@ -1,10 +1,8 @@
-/* globals window */
-
 import { createStore, combineReducers, compose } from 'redux';
 import { state } from 'losen';
 import { persistStore, autoRehydrate } from 'redux-persist';
 
-import schema from '../src/api/datadeling.json';
+import schema from './api/datadeling.json';
 
 /**
  * Create the store with middleware
@@ -14,7 +12,7 @@ const store = createStore(
   undefined,
   compose(
     autoRehydrate(),
-    window.devToolsExtension ? window.devToolsExtension() : f => f,
+    window.devToolsExtension ? window.devToolsExtension() : (f) => f,
   ),
 );
 

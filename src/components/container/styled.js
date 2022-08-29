@@ -6,7 +6,7 @@ const Container = styled.div`
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 990px;
 `;
 
 export default {
