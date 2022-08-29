@@ -1092,8 +1092,8 @@
       "id": "hooray",
       "type": "Result",
       "heading": {
-        "complete": "Dataene kan muligens deles",
-        "completeWithError": "Dataene kan sannsynligvis ikke deles",
+        "complete": "Sammendrag",
+        "completeWithError": "Sammendrag",
         "incomplete": "Du har ikke svart på alt",
         "incompleteWithError": "Du har ikke svart på alt"
       },
