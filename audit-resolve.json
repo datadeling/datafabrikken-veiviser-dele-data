@@ -480,6 +480,16 @@
       "madeAt": 1652701422874,
       "reason": "package was removed",
       "expiresAt": 1653911008644
+    },
+    "1082132|react-scripts>react-dev-utils>browserslist": {
+      "decision": "ignore",
+      "madeAt": 1661773604001,
+      "expiresAt": 1664365593846
+    },
+    "1082595|build>timespan": {
+      "decision": "ignore",
+      "madeAt": 1661773608423,
+      "expiresAt": 1664365593846
     }
   },
   "rules": {},
