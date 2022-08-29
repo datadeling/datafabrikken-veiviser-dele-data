@@ -29,7 +29,7 @@ const PATHNAME = {
   COURSES: '/kurs',
   GUIDANCE: '/veiledning',
   SITEMAP: '/nettstedkart',
-  LEGAL_GUIDE: '/juridisk-veileder-for-datadeling',
+  LEGAL_GUIDE: '/juridisk-veiviser-for-datadeling',
 };
 
 // eslint-disable-next-line import/prefer-default-export

@@ -163,7 +163,7 @@ export class Header extends Component {
                 </li>
                 <li>
                   <SC.PlainLink href={PATHNAME.LEGAL_GUIDE} target="blank">
-                    Juridisk veileder
+                    Juridisk veiviser
                   </SC.PlainLink>
                 </li>
               </SC.Submenu>
@@ -244,7 +244,7 @@ export class Header extends Component {
                     </li>
                     <li>
                       <SC.PlainLink href={PATHNAME.LEGAL_GUIDE} target="blank">
-                        Juridisk veileder
+                        Juridisk veiviser
                       </SC.PlainLink>
                     </li>
                   </ul>

@@ -60,7 +60,7 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache
           build-args:  |
             GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
-            PUBLIC_URL=http://34.117.84.181/juridisk-veileder-for-datadeling
+            PUBLIC_URL=http://34.117.84.181/juridisk-veiviser-for-datadeling
 
       - name: Apply Helm template
         run: |
