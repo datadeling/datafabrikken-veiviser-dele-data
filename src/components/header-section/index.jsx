@@ -20,8 +20,8 @@ HeaderSection.propTypes = {
 };
 
 HeaderSection.defaultProps = {
-  title: "Kan datasettet deles?",
-  subTitle: "Juridisk veileder for deling av data"
+  title: "Juridisk veiviser for deling av data",
+  subTitle: "Finn ut hvilke regelverk som er relevante når data skal deles"
 };
 
 export default HeaderSection;
