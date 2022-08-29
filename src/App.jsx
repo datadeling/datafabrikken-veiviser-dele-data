@@ -10,7 +10,8 @@ import { InfoBox } from './components/infobox';
 import { Container } from './components/container';
 import { Root } from './components/root';
 import { Header } from './components/header';
-import HeaderSection from './components/header-section';
+import { Footer } from './components/footer';
+import { HeaderSection } from './components/header-section';
 
 import Intro from './pages/Intro';
 
@@ -42,6 +43,7 @@ export default class App extends Component {
             <StyleProvider styles={styles}>
               <Intro close={this.closeIntro} />
             </StyleProvider>
+            <Footer />
           </Root>
         </Provider>
       );
@@ -58,7 +60,8 @@ export default class App extends Component {
               <h2>Spør i Datalandsbyen dersom det er noe du lurer på.</h2>
               <a href="https://datafabrikken.norge.no/datalandsbyen" target="_blank" rel="noopener noreferrer">Spør i Datalandsbyen &gt;</a>
             </InfoBox>
-          </Container>
+          </Container> 
+         <Footer />
         </Root>
       </Provider>
     );
