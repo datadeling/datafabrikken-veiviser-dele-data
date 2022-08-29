@@ -30,7 +30,8 @@ function Intro({ close, data }) {
                 <SC.BetaRibbon>BETA</SC.BetaRibbon>
                 <Primitives.Heading.H3>Veiviseren er under utvikling</Primitives.Heading.H3>
                 <Primitives.Paragraphs.P>
-                    Vi jobber med å kontinuerlig forbedre veiviseren og ønsker å lære hvordan den kan gi verdi til deg som bruker. Hvis du oppdager feil, unøyaktigheter eller har andre innspill kan du melde inn dette til datafabrikken@norge.no eller stille spørsmål i Datalandsbyen.
+                    Vi jobber med å kontinuerlig forbedre veiviseren og ønsker å lære hvordan den kan gi verdi til deg som bruker. Hvis du oppdager feil, unøyaktigheter eller har andre innspill 
+                    kan du melde inn dette til <a href="mailto:datafabrikken@norge.no" target="_blank" rel="noopener noreferrer">datafabrikken@norge.no</a> eller stille spørsmål i <a href="https://datafabrikken.norge.no/datalandsbyen" target="_blank" rel="noopener noreferrer">Datalandsbyen</a>.
                 </Primitives.Paragraphs.P>
               </InfoBox>
             </SC.BetaInfoBox>
