@@ -12,6 +12,7 @@ import { Root } from './components/root';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { HeaderSection } from './components/header-section';
+import { registerPageView } from './utils/analytics'
 
 import Intro from './pages/Intro';
 
@@ -30,6 +31,10 @@ export default class App extends Component {
     });
     // eslint-disable-next-line no-undef
     window.scrollTo(0, 0);
+  }
+
+  componentDidMount() {
+    registerPageView(window.location.pathname);        
   }
 
   render() {
