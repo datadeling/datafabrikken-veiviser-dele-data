@@ -34,7 +34,20 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    registerPageView(window.location.pathname);        
+    registerPageView(window.location.pathname);    
+  }
+
+  componentDidUpdate() {
+    const { state: { intro } } = this;
+    if (!intro) {
+      const buttons = document.getElementsByTagName("button");
+      for (var i = 0; i < buttons.length; i++) {
+        let btn = buttons[i];
+        if(btn.innerHTML === 'Vis resultat') {
+          btn.innerHTML = 'Vis sammendrag';
+        }
+      };
+    }
   }
 
   render() {

@@ -306,76 +306,42 @@
       "lead": "Taushetsplikt er en plikt til å holde visse opplysninger man har fått hemmelige. Dersom datasettet du ønsker å dele inneholder taushetsbelagt informasjon vil du i utgangspunktet være forhindret fra å dele dataene.<br><br>Personer som gjennom sitt arbeid eller sin stilling får kunnskap om andres personlige, økonomiske eller forretningsmessige forhold, har etter norsk rett som regel taushetsplikt.",
       "children": [
         {
-          "id": "confidentiality.performs",
-          "property": "confidentiality.performs",
+          "id": "confidentiality.question",
+          "property": "confidentiality.question",
           "type": "Radio",
-          "heading": "Er dataene som ønskes delt, innhentet av en som utfører tjeneste eller arbeid for et forvaltningsorgan i forbindelse med dette arbeidet/tjenesten?",
+          "heading": "Inneholder dataene informasjon om ett av følgende forhold",
+          "summary": "Mer informasjon om taushetsplikten",
+          "details": "Som personlige forhold regnes ikke fødested, fødselsdato og personnummer, statsborgerforhold, sivilstand, yrke, bopel og arbeidssted, med mindre slike opplysninger røper et klientforhold eller andre forhold som må anses som personlige. Det kan være regulert nærmere i forskrift om hvilke opplysninger som skal regnes som personlige, om hvilke organer som kan gi privatpersoner opplysninger som nevnt i punktumet foran og opplysninger om den enkeltes personlige status for øvrig, samt om vilkårene for å gi slike opplysninger.",
           "options": [
             {
-              "id": "confidentiality.performs.yes",
+              "id": "confidentiality.personal",
               "type": "Answer",
-              "heading": "Ja",
-              "value": "yes"
+              "heading": "Dataene inneholder informasjon om noens personlige forhold",
+              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om noens personlige forhold er taushetsbelagt.",
+              "value": "personal"
             },
             {
-              "id": "confidentiality.performs.no",
+              "id": "confidentiality.technical",
               "type": "Answer",
-              "heading": "Nei",
-              "value": "no"
-            }
-          ]
-        },
-        {
-          "type": "Branch",
-          "branches": [
+              "heading": "Dataene inneholder informasjon om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår",
+              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår.",
+              "value": "technical"
+            },
             {
-              "test": {
-                "field": "confidentiality.performs",
-                "operator": "eq",
-                "value": "yes"
-              },
-              "children": [
-                {
-                  "id": "confidentiality.question",
-                  "property": "confidentiality.question",
-                  "type": "Radio",
-                  "heading": "Inneholder dataene informasjon om ett av følgende forhold",
-                  "summary": "Mer informasjon om taushetsplikten",
-                  "details": "Som personlige forhold regnes ikke fødested, fødselsdato og personnummer, statsborgerforhold, sivilstand, yrke, bopel og arbeidssted, med mindre slike opplysninger røper et klientforhold eller andre forhold som må anses som personlige. Det kan være regulert nærmere i forskrift om hvilke opplysninger som skal regnes som personlige, om hvilke organer som kan gi privatpersoner opplysninger som nevnt i punktumet foran og opplysninger om den enkeltes personlige status for øvrig, samt om vilkårene for å gi slike opplysninger.",
-                  "options": [
-                    {
-                      "id": "confidentiality.personal",
-                      "type": "Answer",
-                      "heading": "Dataene inneholder informasjon om noens personlige forhold",
-                      "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om noens personlige forhold er taushetsbelagt.",
-                      "value": "personal"
-                    },
-                    {
-                      "id": "confidentiality.technical",
-                      "type": "Answer",
-                      "heading": "Dataene inneholder informasjon om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår",
-                      "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for et forvaltningsorgan om tekniske innretninger og fremgangsmåter, samt drifts- eller forretningsforhold som det vil være av betydning å hemmeligholde av hensyn til den som opplysningen angår.",
-                      "value": "technical"
-                    },
-                    {
-                      "id": "confidentiality.duty",
-                      "type": "Answer",
-                      "heading": "Dataene inneholder informasjon om forhold som er omfattet av taushetsplikten i en lov som regulerer sektoren",
-                      "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for en yrkesgruppe som er underlagt taushetsplikt i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.",
-                      "value": "duty"
-                    },
-                    {
-                      "id": "confidentiality.none",
-                      "type": "Answer",
-                      "heading": "Ingen av alternativene gjelder",
-                      "text": " ",
-                      "value": "none"
-                    }
-                  ]
-                }
-              ]
+              "id": "confidentiality.duty",
+              "type": "Answer",
+              "heading": "Dataene inneholder informasjon om forhold som er omfattet av taushetsplikten i en lov som regulerer sektoren",
+              "text": "Data som inneholder informasjon som er innhentet av og i forbindelse med at en utfører tjeneste eller arbeid for en yrkesgruppe som er underlagt taushetsplikt i sektorlovgivning. Eksempler på slik sektorlovgivning inkluderer helsepersonelloven, verdipapirloven, vergemålsloven mv.",
+              "value": "duty"
+            },
+            {
+              "id": "confidentiality.none",
+              "type": "Answer",
+              "heading": "Ingen av alternativene gjelder",
+              "text": " ",
+              "value": "none"
             }
-          ]
+          ]              
         },
         {
           "type": "Branch",
@@ -667,7 +633,7 @@
           "id": "intangible.secret",
           "property": "intangible.secret",
           "type": "Radio",
-          "heading": "Er opplysningene hemmelige?",
+          "heading": "Forretningshemmeligheter - Er opplysningene hemmelige?",
           "summary": "Informasjon",
           "details": "Med hemmelig menes at «Opplysningen må ikke være alminnelig kjent eller umiddelbart tilgjengelig i sin helhet eller sammensetning for personer i de kretser som normalt «beskæftiger» seg med denne typen opplysninger», og at «opplysningene ikke nødvendigvis behøver å være hemmelige hver for seg, men at sammenstillingen av opplysninger tilhører noe som ikke er lett tilgjengelig for andre».",
           "options": [
@@ -767,7 +733,7 @@
                                       "id": "intangible.measures.error.msg",
                                       "type": "Text",
                                       "warning": true,
-                                      "text": "Du kan ikke dele de aktuelle dataene, ettersom innholdet eller selve dataene kan defineres som forretningshemmeligheter og nyter særlig beskyttelse.<br><br>Dersom du fremdeles ønsker å dele dataene bør du enten:<ol><li>Vurdere om det er mulig å begrense delingen til de datasettene som ikke er eller inneholder forretningshemmeligheter.</li><li>Innhente skriftlig bekreftelse/samtykke fra «eieren» av forretningshemmeligheten på at dataene kan deles.</li></ol>"
+                                      "text": "Dataene som ønskes delt kan muligens defineres som forretningshemmeligheter. Dersom dette er tilfelle, må du enten:<ol><li>Innhente skriftlig bekreftelse/samtykke fra «eieren» av forretningshemmeligheten på at dataene kan deles.</li><li>Vurdere om det er mulig å begrense delingen til de datasettene som ikke er eller inneholder forretningshemmeligheter.</li></ol>"
                                     }
                                   ]
                                 }
@@ -796,7 +762,7 @@
           "type": "Radio",
           "heading": "Kan det skade nasjonale sikkerhetsinteresser at informasjonen blir kjent for uvedkommende, går tapt, blir endret eller blir utilgjengelig?",
           "summary": "Informasjon",
-          "details": "Sikkerhetsloven stiller krav om at virksomheten skal sørge for et forsvarlig sikkerhetsnivå for skjermingsverdige verdier. Dette innebærer å beskytte verdiene mot tilsiktede handlinger som direkte eller indirekte kan føre til konsekvenser for grunnleggende nasjonale funksjoner og nasjonale sikkerhetsinteresser, og sørge for at skjermingsverdig informasjonen ikke blir kjent for uvedkommende, går tapt, blir endret, eller blir utilgjengelig. For å oppnå et forsvarlig sikkerhetsnivå stiller sikkerhetsloven krav til sikkerhetsstyring. Se mer på <a href=\"https://nsm.no/fagomrader/sikkerhetsstyring/\">Sikkerhetsstyring - Nasjonal sikkerhetsmyndighet (nsm.no)</a>.<br><br>Begrepet nasjonale sikkerhetsinteresser er i sikkerhetsloven § 1-5 nr. 1, definert som: landets suverenitet, territorielle integritet og demokratiske styreform og overordnede sikkerhetspolitiske interesser knyttet til:<ol type=\"a\"><li>de øverste statsorganers virksomhet, sikkerhet og handlefrihet</li><li>forsvar, sikkerhet og beredskap</li><li>forholdet til andre stater og internasjonale organisasjoner</li><li>økonomisk stabilitet og handlefrihet</li><li>samfunnets grunnleggende funksjonalitet og befolkningens grunnleggende sikkerhet</li></ol>",
+          "details": "Sikkerhetsloven stiller krav om at virksomheten skal sørge for et forsvarlig sikkerhetsnivå for skjermingsverdige verdier. Dette innebærer å beskytte verdiene mot tilsiktede handlinger som direkte eller indirekte kan føre til konsekvenser for grunnleggende nasjonale funksjoner og nasjonale sikkerhetsinteresser, og sørge for at skjermingsverdig informasjonen ikke blir kjent for uvedkommende, går tapt, blir endret, eller blir utilgjengelig. For å oppnå et forsvarlig sikkerhetsnivå stiller sikkerhetsloven krav til sikkerhetsstyring. Se mer på <a href=\"https://nsm.no/fagomrader/sikkerhetsstyring/\">Sikkerhetsstyring - Nasjonal sikkerhetsmyndighet (nsm.no)</a>.",
           "options": [
             {
               "id": "protection.damage.yes",
@@ -850,6 +816,8 @@
           "property": "state.aid.public",
           "type": "Radio",
           "heading": "Er du en offentlig aktør?",
+          "summary": "Informasjon",
+          "details": "Et offentlig foretak må være under offentlig kontroll, det vil si at forvaltningen eier mer enn 50 prosent.",
           "options": [
             {
               "id": "state.aid.public.yes",
@@ -943,7 +911,7 @@
                                       "id": "state.aid.market.error.msg",
                                       "type": "Text",
                                       "warning": true,
-                                      "text": "Dersom det overføres data fra det offentlige til det private, slik at en eller flere private aktører får tilgang til data på bedre vilkår enn resten av markedet, kan denne overføringen utgjøre en forskjellsbehandling som innebærer ulovlig statsstøtte etter EØS-avtalens artikkel 61. Vi anbefaler deg å ta kontakt med en advokat dersom du er usikker på om det er anledning til å dele data etter statsstøtteregelverket."
+                                      "text": "Dersom det overføres data fra det offentlige til det private, slik at en eller flere private aktører får tilgang til data på bedre vilkår enn resten av markedet, kan denne overføringen utgjøre en forskjellsbehandling som innebærer ulovlig statsstøtte etter EØS-avtalens artikkel 61."
                                     }
                                   ]
                                 }
@@ -1098,8 +1066,8 @@
         "incompleteWithError": "Du har ikke svart på alt"
       },
       "lead": {
-        "complete": "Dersom du har gitt riktige opplysninger kan disse dataene deles, men sjekk at alt stemmer.",
-        "completeWithError": "Dersom du har gitt riktige opplysninger kan disse dataene ikke deles, men sjekk at alt stemmer.",
+        "complete": "",
+        "completeWithError": "",
         "incomplete": "For at vi skal kunne gi deg riktig veiledning må du fylle ut hele skjemaet",
         "incompleteWithError": "For at vi skal kunne gi deg riktig veiledning må du fylle ut hele skjemaet"
       }
