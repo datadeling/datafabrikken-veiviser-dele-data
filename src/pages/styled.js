@@ -19,6 +19,10 @@ const BetaInfoBox = styled.div`
       padding: 2em 6em 0;
       overflow: hidden;
 
+      ${onMobileView} {
+        padding: 4em 2em 2em 2em;
+      }
+
       h3 {
         font-size: 1.5rem;
         font-weight: 400;

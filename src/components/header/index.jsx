@@ -162,7 +162,7 @@ export class Header extends Component {
                   </SC.PlainLink>
                 </li>
                 <li>
-                  <SC.PlainLink href={PATHNAME.LEGAL_GUIDE} target="blank">
+                  <SC.PlainLink href={PATHNAME.LEGAL_GUIDE}>
                     Juridisk veiviser
                   </SC.PlainLink>
                 </li>
@@ -192,12 +192,12 @@ export class Header extends Component {
           <SC.MobileMenu id="mobileMenu" isOpen={isMobileMenuOpen} onClose={closeMobileMenu}>
             <Trigger>
               <SC.MenuButton onClick={openMobileMenu}>
+                <span>Meny</span>
                 <SC.Burger open={isMobileMenuOpen}>
                   <div />
                   <div />
                   <div />
                 </SC.Burger>
-                <span>Meny</span>
               </SC.MenuButton>
             </Trigger>
             <Menu>
@@ -243,7 +243,7 @@ export class Header extends Component {
                       </SC.PlainLink>
                     </li>
                     <li>
-                      <SC.PlainLink href={PATHNAME.LEGAL_GUIDE} target="blank">
+                      <SC.PlainLink href={PATHNAME.LEGAL_GUIDE}>
                         Juridisk veiviser
                       </SC.PlainLink>
                     </li>

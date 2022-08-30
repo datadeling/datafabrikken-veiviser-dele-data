@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const onMobileView = '@media (max-width: 900px)';
 
 const HeaderSection = styled.section`
+  display: flex;
   color: #ffffff;
   background: #252933;
   padding-bottom: 2em;
@@ -26,7 +27,7 @@ const Container = styled.div`
 
   ${onMobileView} {
     & {
-      padding: 4em calc(12px + (32 - 12) * ((100vw - 320px) / (900 - 320))) 0;
+      padding: 60px calc(12px + (32 - 12) * ((100vw - 320px) / (900 - 320))) 0;
     }
   }
 `;
