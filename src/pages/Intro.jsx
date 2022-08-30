@@ -35,7 +35,6 @@ function Intro({ close, data }) {
                 </Primitives.Paragraphs.P>
               </InfoBox>
             </SC.BetaInfoBox>
-            <Primitives.Paragraphs.Lead>Formålet med denne veiviseren er for å teste om denne formen for veiledning gir verdi til brukeren. Dette er således en testversjon.</Primitives.Paragraphs.Lead>
             <Primitives.Heading.H2>Hva inneholder veiviseren</Primitives.Heading.H2>
             <Primitives.Paragraphs.P>
             Veiviseren guider deg gjennom noen sentrale juridiske spørsmål du må besvare før du deler data.
