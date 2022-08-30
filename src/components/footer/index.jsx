@@ -41,9 +41,9 @@ export function Footer() {
             </a>
           </p>
           <SC.Social>
-            <a href="https://www.facebook.com/datafabrikken" target="_blank" rel='noopener noreferrer' alt="Facebook"><FacebookIcon /></a>
-            <a href="https://www.linkedin.com/company/datafabrikken/" target="_blank" rel='noopener noreferrer' alt="Linkedin"><LinkedinIcon /></a>
-            <a href="https://twitter.com/datafabrikken" target="_blank" rel='noopener noreferrer' alt="Twitter"><TwitterIcon /></a>
+            <a href="https://www.facebook.com/datafabrikken" target="_blank" rel='noopener noreferrer' title="Facebook"><FacebookIcon /></a>
+            <a href="https://www.linkedin.com/company/datafabrikken/" target="_blank" rel='noopener noreferrer' title="Linkedin"><LinkedinIcon /></a>
+            <a href="https://twitter.com/datafabrikken" target="_blank" rel='noopener noreferrer' title="Twitter"><TwitterIcon /></a>
           </SC.Social>
         </SC.ByLine>
         <SC.LinkSection>

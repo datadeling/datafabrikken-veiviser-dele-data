@@ -21,7 +21,7 @@ HeaderSection.propTypes = {
 
 HeaderSection.defaultProps = {
   title: "Juridisk veiviser for deling av data",
-  subTitle: "Finn ut hvilke regelverk som er relevante når data skal deles"
+  subTitle: "Finn ut hvilke regelverk kan være relevante når data skal deles"
 };
 
 export default HeaderSection;
