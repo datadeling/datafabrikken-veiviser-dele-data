@@ -105,6 +105,12 @@ const LinkList = styled.ul`
   }
 `;
 
+const Social = styled.div`
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+`;
+
 export default {
   Footer,
   Container,
@@ -112,5 +118,6 @@ export default {
   Title,
   LinkSection,
   LinkTitle,
-  LinkList
+  LinkList,
+  Social
 };
