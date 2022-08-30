@@ -109,6 +109,7 @@ const Social = styled.div`
   display: flex;
   gap: 1.5em;
   align-items: center;
+  margin-bottom: 2em;
 `;
 
 export default {

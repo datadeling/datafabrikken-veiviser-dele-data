@@ -121,11 +121,10 @@ const SkipLink = styled.a`
 `;
 
 const Logo = styled.a`
-  font-size: 2.0rem;
-  font-weight: 600;
-
   ${onMobileView} {
-    font-size: 1.8rem;
+    & > svg {
+      width: 80%;
+    }
   }
 `;
 
@@ -170,6 +169,8 @@ const MenuButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  gap: 0.4em;
+  white-space: nowrap;
 `;
 
 const Burger = styled.div`
