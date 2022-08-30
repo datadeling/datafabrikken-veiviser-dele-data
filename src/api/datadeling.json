@@ -1068,8 +1068,8 @@
       "lead": {
         "complete": "",
         "completeWithError": "",
-        "incomplete": "For at vi skal kunne gi deg riktig veiledning må du fylle ut hele skjemaet",
-        "incompleteWithError": "For at vi skal kunne gi deg riktig veiledning må du fylle ut hele skjemaet"
+        "incomplete": "",
+        "incompleteWithError": ""
       }
     }
   ]
