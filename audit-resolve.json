@@ -52,13 +52,13 @@
     },
     "1067452|react-scripts>webpack-dev-server>selfsigned>node-forge": {
       "decision": "ignore",
-      "madeAt": 1652704340322,
-      "expiresAt": 1655296314867
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
     },
     "1067471|react-scripts>webpack-dev-server>selfsigned>node-forge": {
       "decision": "ignore",
-      "madeAt": 1652704340322,
-      "expiresAt": 1655296314867
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
     },
     "1067473|react-scripts>webpack-dev-server>selfsigned>node-forge": {
       "decision": "ignore",
@@ -377,18 +377,18 @@
     },
     "1070354|react-scripts>webpack-dev-server>selfsigned>node-forge": {
       "decision": "ignore",
-      "madeAt": 1652704340323,
-      "expiresAt": 1655296314867
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
     },
     "1070355|react-scripts>webpack-dev-server>selfsigned>node-forge": {
       "decision": "ignore",
-      "madeAt": 1652704340323,
-      "expiresAt": 1655296314867
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
     },
     "1070356|react-scripts>webpack-dev-server>selfsigned>node-forge": {
       "decision": "ignore",
-      "madeAt": 1652704340323,
-      "expiresAt": 1655296314867
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
     },
     "1067444|eslint>shelljs": {
       "decision": "ignore",
@@ -427,8 +427,8 @@
     },
     "1067407|losen>axios>follow-redirects": {
       "decision": "ignore",
-      "madeAt": 1655297068710,
-      "expiresAt": 1657889022249
+      "madeAt": 1670330091163,
+      "expiresAt": 1672922075301
     },
     "1067459|losen>axios>follow-redirects": {
       "decision": "ignore",
@@ -483,13 +483,308 @@
     },
     "1082132|react-scripts>react-dev-utils>browserslist": {
       "decision": "ignore",
-      "madeAt": 1661773604001,
-      "expiresAt": 1664365593846
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
     },
     "1082595|build>timespan": {
       "decision": "ignore",
-      "madeAt": 1661773608423,
-      "expiresAt": 1664365593846
+      "madeAt": 1670330100573,
+      "expiresAt": 1672922075301
+    },
+    "1067720|react-scripts>react-dev-utils>immer": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1070012|react-scripts>resolve-url-loader>postcss": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1070415|react-scripts>optimize-css-assets-webpack-plugin>cssnano>cssnano-preset-default>postcss-svgo>svgo>css-select>nth-check": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1081840|react-scripts>webpack-dev-server>selfsigned>node-forge": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1081884|react-scripts>react-dev-utils>globby>fast-glob>glob-parent": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1081884|react-scripts>webpack>watchpack>watchpack-chokidar2>chokidar>glob-parent": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1081884|react-scripts>webpack-dev-server>chokidar>glob-parent": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1081899|react-scripts>react-dev-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1082045|react-scripts>webpack-dev-server>ansi-html": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1082085|react-scripts>resolve-url-loader>postcss": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1082413|react-scripts>react-dev-utils>immer": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1082435|react-scripts>jest>jest-cli>@jest/core>@jest/reporters>node-notifier": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1084333|react-scripts>jest>jest-cli>jest-config>jest-environment-jsdom>jsdom": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1084333|react-scripts>jest>jest-cli>@jest/core>jest-config>jest-environment-jsdom>jsdom": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1084333|react-scripts>jest>jest-cli>@jest/core>jest-runtime>jest-config>jest-environment-jsdom>jsdom": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1084333|react-scripts>jest>jest-cli>@jest/core>@jest/reporters>jest-runtime>jest-config>jest-environment-jsdom>jsdom": {
+      "decision": "ignore",
+      "madeAt": 1670330084074,
+      "expiresAt": 1672922075301
+    },
+    "1084333|react-scripts>jest>jest-cli>@jest/core>jest-runner>jest-jasmine2>jest-runtime>jest-config>jest-environment-jsdom>jsdom": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084333|react-scripts>jest-environment-jsdom-fourteen>jsdom": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084348|react-scripts>react-dev-utils>immer": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084765|react-scripts>react-dev-utils>recursive-readdir>minimatch": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084769|react-scripts>react-dev-utils>shell-quote": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084924|react-scripts>react-dev-utils>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084924|react-scripts>resolve-url-loader>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084993|react-scripts>react-dev-utils>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1084993|react-scripts>resolve-url-loader>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085034|react-scripts>react-dev-utils>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085034|react-scripts>resolve-url-loader>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>webpack>micromatch>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>webpack>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>babel-jest>@jest/transform>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>webpack-dev-server>chokidar>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>babel-jest>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest-environment-jsdom-fourteen>@jest/environment>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>jest-config>babel-jest>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-config>babel-jest>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>@jest/reporters>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-runner>jest-jasmine2>jest-runtime>jest-config>babel-jest>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-runner>jest-jasmine2>jest-runtime>jest-config>jest-environment-jsdom>@jest/environment>@jest/transform>jest-haste-map>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-runner>jest-jasmine2>jest-runtime>jest-config>jest-environment-jsdom>@jest/environment>@jest/transform>jest-haste-map>sane>anymatch>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-runner>jest-jasmine2>jest-runtime>jest-config>jest-environment-jsdom>@jest/environment>@jest/transform>jest-haste-map>jest-util>@jest/fake-timers>jest-message-util>micromatch>braces>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1085062|react-scripts>jest>jest-cli>@jest/core>jest-runner>jest-jasmine2>jest-runtime>jest-config>jest-environment-jsdom>@jest/environment>@jest/transform>jest-haste-map>jest-util>@jest/fake-timers>jest-message-util>micromatch>extglob>expand-brackets>snapdragon>source-map-resolve>decode-uri-component": {
+      "decision": "ignore",
+      "madeAt": 1670330084075,
+      "expiresAt": 1672922075301
+    },
+    "1082461|react>fbjs>isomorphic-fetch>node-fetch": {
+      "decision": "ignore",
+      "madeAt": 1670330087253,
+      "expiresAt": 1672922075301
+    },
+    "1085117|react>fbjs>isomorphic-fetch>node-fetch": {
+      "decision": "ignore",
+      "madeAt": 1670330087253,
+      "expiresAt": 1672922075301
+    },
+    "1084924|react-scripts>@svgr/webpack>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330089340,
+      "expiresAt": 1672922075301
+    },
+    "1084993|react-scripts>@svgr/webpack>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330089340,
+      "expiresAt": 1672922075301
+    },
+    "1085034|react-scripts>@svgr/webpack>loader-utils": {
+      "decision": "ignore",
+      "madeAt": 1670330089340,
+      "expiresAt": 1672922075301
+    },
+    "1084497|losen>axios>follow-redirects": {
+      "decision": "ignore",
+      "madeAt": 1670330091163,
+      "expiresAt": 1672922075301
+    },
+    "1069598|build>jxLoader>js-yaml": {
+      "decision": "ignore",
+      "madeAt": 1670330093219,
+      "expiresAt": 1672922075301
+    },
+    "1069604|build>jxLoader>js-yaml": {
+      "decision": "ignore",
+      "madeAt": 1670330093219,
+      "expiresAt": 1672922075301
+    },
+    "1069942|build>jxLoader>js-yaml": {
+      "decision": "ignore",
+      "madeAt": 1670330093219,
+      "expiresAt": 1672922075301
+    },
+    "1069960|build>uglify-js": {
+      "decision": "ignore",
+      "madeAt": 1670330095303,
+      "expiresAt": 1672922075301
+    },
+    "1069961|build>uglify-js": {
+      "decision": "ignore",
+      "madeAt": 1670330095303,
+      "expiresAt": 1672922075301
+    },
+    "1070415|react-scripts>@svgr/webpack>@svgr/plugin-svgo>svgo>css-select>nth-check": {
+      "decision": "ignore",
+      "madeAt": 1670330097112,
+      "expiresAt": 1672922075301
+    },
+    "1082461|losen>react>fbjs>isomorphic-fetch>node-fetch": {
+      "decision": "ignore",
+      "madeAt": 1670330098872,
+      "expiresAt": 1672922075301
+    },
+    "1085117|losen>react>fbjs>isomorphic-fetch>node-fetch": {
+      "decision": "ignore",
+      "madeAt": 1670330098872,
+      "expiresAt": 1672922075301
+    },
+    "1084434|losen>axios": {
+      "decision": "ignore",
+      "madeAt": 1670330102293,
+      "expiresAt": 1672922075301
+    },
+    "1084436|losen>axios": {
+      "decision": "ignore",
+      "madeAt": 1670330102293,
+      "expiresAt": 1672922075301
     }
   },
   "rules": {},
